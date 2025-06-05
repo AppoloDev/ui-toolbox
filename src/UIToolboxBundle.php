@@ -4,9 +4,9 @@ namespace AppoloDev\UIToolboxBundle;
 
 use AppoloDev\UIToolboxBundle\DependencyInjection\UIToolboxExtension;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
-use Symfony\Component\HttpKernel\Bundle\Bundle;
+use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 
-class UIToolboxBundle extends Bundle
+class UIToolboxBundle extends AbstractBundle
 {
     public function getContainerExtension(): ?ExtensionInterface
     {
