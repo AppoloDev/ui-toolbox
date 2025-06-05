@@ -1,0 +1,72 @@
+{% extends '@UIToolbox/docs/_layout/base.html.twig' %}
+
+{% block title %}UI Toolbox Documentation{% endblock %}
+
+{% block body %}
+    <div class="container mx-auto p-4">
+        <div class="hero bg-base-200 rounded-lg">
+            <div class="hero-content text-center">
+                <div class="max-w-md">
+                    <h1 class="text-5xl font-bold">UI Toolbox</h1>
+                    <p class="py-6">A Symfony bundle providing a collection of DaisyUI components for reuse across projects.</p>
+                    <a href="{{ path('ui_toolbox_button') }}" class="btn btn-primary">Explore Components</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="card bg-base-100 shadow-xl">
+                <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Buttons" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Button Component</h2>
+                    <p>The Button component is a wrapper around the DaisyUI button component. It provides a simple way to create buttons with various styles, colors, sizes, and behaviors.</p>
+                    <div class="card-actions justify-end">
+                        <a href="{{ path('ui_toolbox_button') }}" class="btn btn-primary">View Examples</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl">
+                <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Coming Soon" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Coming Soon</h2>
+                    <p>More components will be added to the UI Toolbox bundle in the future. Stay tuned!</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-disabled">Not Available</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl">
+                <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Installation" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Installation</h2>
+                    <p>Check out the documentation to learn more about the UI Toolbox bundle and how to use it in your projects.</p>
+                    <div class="card-actions justify-end">
+                        <a href="https://github.com/appolodev/ui-toolbox" target="_blank" class="btn btn-primary">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 prose max-w-none">
+            <h2>Getting Started</h2>
+            <p>To use the UI Toolbox bundle in your Symfony project, follow these steps:</p>
+
+            <h3>1. Install the Bundle</h3>
+            <pre><code class="language-bash">composer require appolodev/ui-toolbox</code></pre>
+
+            <h3>2. Use the Components</h3>
+            <p>Once installed, you can use the components in your Twig templates:</p>
+            <pre><code class="language-twig">{{ "{{ component('button', {
+    label: 'Click me',
+    color: 'primary',
+    size: 'lg',
+    style: 'outline'
+}) }}" }}</code></pre>
+
+            <h3>3. Explore the Examples</h3>
+            <p>Check out the <a href="{{ path('ui_toolbox_button') }}">Button component examples</a> to see all the available options and features.</p>
+        </div>
+    </div>
+{% endblock %}

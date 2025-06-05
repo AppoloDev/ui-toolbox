@@ -1,0 +1,42 @@
+{
+    "name": "appolodev/ui-toolbox",
+    "description": "Toolbox UI for Symfony",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fredxd",
+            "email": "frederic@appolo.fr"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=8.3",
+        "twig/twig": "^3.0",
+        "symfony/ux-twig-component": "^2.9",
+        "symfony/twig-bundle": "^7.2",
+        "symfony/ux-icons": "^2.18",
+        "symfonycasts/tailwind-bundle": "^0.10"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.22",
+        "phpstan/phpstan": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AppoloDev\\UIToolboxBundle\\": "src/"
+        }
+    },
+    "scripts": {
+        "auto-scripts": {
+            "ui-toolbox:importmap:merge": "symfony-cmd",
+            "importmap:install": "symfony-cmd"
+        },
+        "post-install-cmd": [
+            "@auto-scripts"
+        ],
+        "post-update-cmd": [
+            "@auto-scripts"
+        ]
+    }
+}

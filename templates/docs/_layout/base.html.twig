@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}UI Toolbox Documentation{% endblock %}</title>
+
+    {# Import DaisyUI CSS #}
+    {{ importmap('daisyui/daisyui.min.css') }}
+
+    {# Import UI Toolbox JS #}
+    {{ importmap('ui-toolbox') }}
+
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+    <div class="min-h-screen bg-base-100">
+        <header class="navbar bg-base-200 shadow-md">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a href="{{ path('ui_toolbox_dashboard') }}">Home</a></li>
+                        <li>
+                            <a>Components</a>
+                            <ul class="p-2">
+                                <li><a href="{{ path('ui_toolbox_button') }}">Button</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <a href="{{ path('ui_toolbox_dashboard') }}" class="btn btn-ghost normal-case text-xl">UI Toolbox</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="{{ path('ui_toolbox_dashboard') }}">Home</a></li>
+                    <li tabindex="0">
+                        <details>
+                            <summary>Components</summary>
+                            <ul class="p-2">
+                                <li><a href="{{ path('ui_toolbox_button') }}">Button</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a href="https://github.com/appolodev/ui-toolbox" target="_blank" class="btn btn-primary">GitHub</a>
+            </div>
+        </header>
+
+        <main>
+            {% block body %}{% endblock %}
+        </main>
+
+        <footer class="footer p-10 bg-base-200 text-base-content mt-10">
+            <div>
+                <span class="footer-title">UI Toolbox</span>
+                <p>A collection of DaisyUI components for Symfony</p>
+                <p>© {{ "now"|date("Y") }} AppoloDev</p>
+            </div>
+            <div>
+                <span class="footer-title">Components</span>
+                <a href="{{ path('ui_toolbox_button') }}" class="link link-hover">Button</a>
+            </div>
+            <div>
+                <span class="footer-title">Resources</span>
+                <a class="link link-hover" href="https://daisyui.com" target="_blank">DaisyUI</a>
+                <a class="link link-hover" href="https://tailwindcss.com" target="_blank">Tailwind CSS</a>
+                <a class="link link-hover" href="https://symfony.com" target="_blank">Symfony</a>
+            </div>
+        </footer>
+    </div>
+
+    {% block javascripts %}{% endblock %}
+</body>
+</html>

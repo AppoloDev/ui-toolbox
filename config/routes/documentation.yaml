@@ -1,0 +1,9 @@
+ui_toolbox_dashboard:
+    path: /
+    controller: AppoloDev\UIToolboxBundle\Controller\Dashboard
+    methods: [GET]
+
+ui_toolbox_button:
+    path: /actions/button
+    controller: AppoloDev\UIToolboxBundle\Controller\Actions\Button
+    methods: [GET]

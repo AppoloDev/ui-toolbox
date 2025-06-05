@@ -1,0 +1,251 @@
+{% extends '@UIToolbox/docs/_layout/base.html.twig' %}
+
+{% block title %}Button Component - UI Toolbox Documentation{% endblock %}
+
+{% block body %}
+    <div class="container mx-auto p-4">
+        <h1 class="text-2xl font-bold mb-6">Button Component</h1>
+
+        <div class="prose max-w-none mb-8">
+            <p>
+                The Button component is a wrapper around the DaisyUI button component. It provides a simple way to create buttons with various styles, colors, sizes, and behaviors.
+            </p>
+            <p>
+                This page demonstrates all the available options and features of the Button component.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Basic buttons -->
+            <div class="card bg-base-200 shadow-xl">
+                <div class="card-body">
+                    <h2 class="card-title">Basic Buttons</h2>
+                    <div class="flex flex-wrap gap-2">
+                        {{ component('button', { label: 'Default' }) }}
+                        {{ component('button', { label: 'Primary', color: 'primary' }) }}
+                        {{ component('button', { label: 'Secondary', color: 'secondary' }) }}
+                        {{ component('button', { label: 'Accent', color: 'accent' }) }}
+                    </div>
+                    <div class="mt-2 text-sm opacity-70">
+                        <code>component('button', { label: 'Primary', color: 'primary' })</code>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Style variants -->
+            <div class="card bg-base-200 shadow-xl">
+                <div class="card-body">
+                    <h2 class="card-title">Style Variants</h2>
+                    <div class="flex flex-wrap gap-2">
+                        {{ component('button', { label: 'Outline', color: 'primary', style: 'outline' }) }}
+                        {{ component('button', { label: 'Ghost', color: 'secondary', style: 'ghost' }) }}
+                        {{ component('button', { label: 'Link', style: 'link' }) }}
+                        {{ component('button', { label: 'Dash', color: 'primary', style: 'dash' }) }}
+                        {{ component('button', { label: 'Soft', color: 'secondary', style: 'soft' }) }}
+                    </div>
+                    <div class="mt-2 text-sm opacity-70">
+                        <code>component('button', { style: 'outline' })</code>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sizes -->
+            <div class="card bg-base-200 shadow-xl">
+                <div class="card-body">
+                    <h2 class="card-title">Sizes</h2>
+                    <div class="flex flex-wrap gap-2 items-center">
+                        {{ component('button', { label: 'Extra Large', color: 'primary', size: 'xl' }) }}
+                        {{ component('button', { label: 'Large', color: 'primary', size: 'lg' }) }}
+                        {{ component('button', { label: 'Medium', color: 'primary', size: 'md' }) }}
+                        {{ component('button', { label: 'Small', color: 'primary', size: 'sm' }) }}
+                        {{ component('button', { label: 'Extra Small', color: 'primary', size: 'xs' }) }}
+                    </div>
+                    <div class="mt-2 text-sm opacity-70">
+                        <code>component('button', { size: 'lg' })</code>
+                    </div>
+                </div>
+            </div>
+
+            <!-- States -->
+            <div class="card bg-base-200 shadow-xl">
+                <div class="card-body">
+                    <h2 class="card-title">States</h2>
+                    <div class="flex flex-wrap gap-2">
+                        {{ component('button', { label: 'Active', color: 'primary', state: 'active' }) }}
+                        {{ component('button', { label: 'Disabled', color: 'primary', disabled: true }) }}
+                        {{ component('button', { label: 'Disabled Alt', color: 'primary', state: 'disabled' }) }}
+                    </div>
+                    <div class="mt-2 text-sm opacity-70">
+                        <code>component('button', { state: 'active' })</code> or <code>disabled: true</code>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shapes -->
+            <div class="card bg-base-200 shadow-xl">
+                <div class="card-body">
+                    <h2 class="card-title">Shapes</h2>
+                    <div class="flex flex-wrap gap-2">
+                        {{ component('button', { label: 'Wide', color: 'primary', shape: 'wide' }) }}
+                        {{ component('button', { label: 'Block', color: 'primary', shape: 'block', class: 'w-full' }) }}
+                        {{ component('button', { label: 'S', color: 'primary', shape: 'square' }) }}
+                        {{ component('button', { label: 'C', color: 'primary', shape: 'circle' }) }}
+                    </div>
+                    <div class="mt-2 text-sm opacity-70">
+                        <code>component('button', { shape: 'wide' })</code>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Colors -->
+            <div class="card bg-base-200 shadow-xl">
+                <div class="card-body">
+                    <h2 class="card-title">Colors</h2>
+                    <div class="flex flex-wrap gap-2">
+                        {{ component('button', { label: 'Info', color: 'info' }) }}
+                        {{ component('button', { label: 'Success', color: 'success' }) }}
+                        {{ component('button', { label: 'Warning', color: 'warning' }) }}
+                        {{ component('button', { label: 'Error', color: 'error' }) }}
+                        {{ component('button', { label: 'Neutral', color: 'neutral' }) }}
+                    </div>
+                    <div class="mt-2 text-sm opacity-70">
+                        <code>component('button', { color: 'success' })</code>
+                    </div>
+                </div>
+            </div>
+
+            <!-- With icons -->
+            <div class="card bg-base-200 shadow-xl">
+                <div class="card-body">
+                    <h2 class="card-title">With Icons</h2>
+                    <div class="flex flex-wrap gap-2">
+                        {% component button with { color: 'primary' } %}
+                            {% block content %}
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                                </svg>
+                                Download
+                            {% endblock %}
+                        {% endcomponent %}
+
+                        {% component button with { color: 'success' } %}
+                            {% block content %}
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                Save
+                            {% endblock %}
+                        {% endcomponent %}
+                    </div>
+                    <div class="mt-2 text-sm opacity-70">
+                        <pre class="text-xs overflow-x-auto">{% raw %}{% component button %}
+    {% block content %}
+        <svg>...</svg> Text
+    {% endblock %}
+{% endcomponent %}{% endraw %}</pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HTML Elements -->
+            <div class="card bg-base-200 shadow-xl">
+                <div class="card-body">
+                    <h2 class="card-title">HTML Elements</h2>
+                    <div class="flex flex-wrap gap-2">
+                        {{ component('button', {
+                            label: 'Link Button',
+                            color: 'primary',
+                            element: 'a',
+                            href: 'https://example.com',
+                            target: '_blank',
+                            rel: 'noopener'
+                        }) }}
+
+                        {{ component('button', {
+                            label: 'Input Button',
+                            color: 'secondary',
+                            element: 'input',
+                            type: 'button'
+                        }) }}
+
+                        {{ component('button', {
+                            label: 'Submit Button',
+                            color: 'success',
+                            type: 'submit'
+                        }) }}
+                    </div>
+                    <div class="mt-2 text-sm opacity-70">
+                        <code>component('button', { element: 'a', href: '...' })</code>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Attributes -->
+            <div class="card bg-base-200 shadow-xl">
+                <div class="card-body">
+                    <h2 class="card-title">Form Attributes</h2>
+                    <form class="flex flex-wrap gap-2" onsubmit="event.preventDefault();">
+                        {{ component('button', {
+                            label: 'Submit',
+                            color: 'primary',
+                            type: 'submit',
+                            name: 'action',
+                            value: 'save'
+                        }) }}
+
+                        {{ component('button', {
+                            label: 'Reset',
+                            color: 'error',
+                            type: 'reset'
+                        }) }}
+
+                        {{ component('button', {
+                            label: 'With ID',
+                            color: 'info',
+                            id: 'special-button'
+                        }) }}
+                    </form>
+                    <div class="mt-2 text-sm opacity-70">
+                        <code>component('button', { type: 'submit', name: 'action', value: 'save' })</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8 prose max-w-none">
+            <h2>Usage in Templates</h2>
+            <p>The Button component can be used in two ways:</p>
+
+            <h3>1. Simple Usage</h3>
+            <pre><code class="language-twig">{{ "{{ component('button', {
+    label: 'Click me',
+    color: 'primary',
+    size: 'lg',
+    style: 'outline'
+}) }}" }}</code></pre>
+
+            <h3>2. Block Content Usage</h3>
+            <pre><code class="language-twig">{% raw %}{% component button with { color: 'primary' } %}
+    {% block content %}
+        <svg>...</svg> Custom Content
+    {% endblock %}
+{% endcomponent %}{% endraw %}</code></pre>
+
+            <h3>Available Options</h3>
+            <ul>
+                <li><strong>label</strong> (string): The text to display on the button</li>
+                <li><strong>color</strong> (string): primary, secondary, accent, info, success, warning, error, neutral</li>
+                <li><strong>style</strong> (string): outline, ghost, link, dash, soft</li>
+                <li><strong>size</strong> (string): xl, lg, md, sm, xs</li>
+                <li><strong>state</strong> (string): active, disabled</li>
+                <li><strong>shape</strong> (string): wide, block, square, circle</li>
+                <li><strong>class</strong> (string): Additional CSS classes</li>
+                <li><strong>type</strong> (string): button, submit, reset</li>
+                <li><strong>element</strong> (string): button, a, input</li>
+                <li><strong>disabled</strong> (boolean): true/false</li>
+                <li><strong>id, name, value</strong> (string): HTML attributes</li>
+                <li><strong>href, target, rel</strong> (string): Link attributes (for element: 'a')</li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
