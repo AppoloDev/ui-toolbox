@@ -39,7 +39,7 @@
     {% if name %}name="{{ name }}"{% endif %}
     {% if value %}value="{{ value }}"{% endif %}
     {% if label %}value="{{ label }}"{% endif %}
-    {% if disabled or state == 'disabled' %}disabled{% endif %}
+    {% if disabled is same as(true) or state == 'disabled' %}disabled{% endif %}
     {{ attributes }}
 />
 {% else %}
@@ -49,7 +49,7 @@
     {% if id %}id="{{ id }}"{% endif %}
     {% if name %}name="{{ name }}"{% endif %}
     {% if value %}value="{{ value }}"{% endif %}
-    {% if disabled or state == 'disabled' %}disabled{% endif %}
+    {% if disabled is same as(true) or state == 'disabled' %}disabled{% endif %}
     {{ attributes }}
 >
     {%- if block('content') is defined -%}
