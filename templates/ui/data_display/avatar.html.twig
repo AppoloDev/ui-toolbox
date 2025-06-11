@@ -1,0 +1,11 @@
+{% apply spaceless %}
+<div class="avatar {{ status ? status }}{{ placeholder ? ' avatar-placeholder' }}">
+    <div class="{{ class }}">
+        {% if placeholder is not null %}
+            <span>{{ placeholder }}</span>
+        {% elseif src is defined %}
+            <img src="{{ src }}" alt="{{ alt|default('Avatar') }}" />
+        {% endif %}
+    </div>
+</div>
+{% endapply %}

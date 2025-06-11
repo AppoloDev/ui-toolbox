@@ -1,20 +1,3 @@
-{#
- # Button component template
- #
- # Usage:
- # {{ component('button', {
- #     label: 'Click me',
- #     color: 'primary',
- #     size: 'md',
- #     style: 'outline',
- #     state: 'active',
- #     shape: 'wide',
- #     type: 'button',
- #     disabled: false,
- #     class: 'my-custom-class'
- # }) }}
- #}
-
 {% if element == 'a' %}
 <a
     href="{{ href|default('#') }}"

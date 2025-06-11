@@ -1,0 +1,25 @@
+/* Base badge class */
+.badge
+
+/* Color variants */
+.badge-primary
+.badge-secondary
+.badge-accent
+.badge-info
+.badge-success
+.badge-warning
+.badge-error
+.badge-neutral
+
+/* Style variants */
+.badge-outline
+.badge-ghost
+.badge-soft
+.badge-dash
+
+/* Size variants */
+ .badge-xs
+ .badge-sm
+ .badge-md
+ .badge-lg
+ .badge-xl

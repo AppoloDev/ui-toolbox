@@ -1,6 +1,6 @@
 <?php
 
-namespace AppoloDev\UIToolboxBundle\UI\Actions\Button;
+namespace AppoloDev\UIToolboxBundle\UI\Actions;
 
 use AppoloDev\UIToolboxBundle\Attribute\UIComponentDoc;
 use AppoloDev\UIToolboxBundle\Attribute\UIComponentExample;
@@ -8,7 +8,7 @@ use AppoloDev\UIToolboxBundle\Attribute\UIComponentProp;
 use AppoloDev\UIToolboxBundle\Resolver\ComponentOptionsResolverTrait;
 use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 
-#[AsTwigComponent('button', template: '@UIToolbox/ui/actions/button/button.html.twig')]
+#[AsTwigComponent('button', template: '@UIToolbox/ui/actions/button.html.twig')]
 #[UIComponentDoc(
     title: 'Button',
     description: 'A customizable button component based on DaisyUI. Supports color, size, style, state, shape, and more.',

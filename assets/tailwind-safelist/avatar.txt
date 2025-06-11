@@ -1,0 +1,8 @@
+/* Base avatar class */
+.avatar
+.avatar-group
+.avatar-placeholder
+
+/* Avatar status */
+.avatar-online
+.avatar-offline
