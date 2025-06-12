@@ -78,6 +78,12 @@
 .collapse-open
 .collapse-close
 
+/* Join class */
+.join
+.join-item
+.join-vertical
+.join-horizontal
+
 /* Tabs class */
 .tabs
 .tab
