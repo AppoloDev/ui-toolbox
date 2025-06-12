@@ -2,17 +2,11 @@
 
 namespace AppoloDev\UIToolboxBundle\UI\Navigation\Breadcrumb;
 
-use AppoloDev\UIToolboxBundle\Attribute\UIComponentDoc;
 use AppoloDev\UIToolboxBundle\Attribute\UIComponentProp;
 use AppoloDev\UIToolboxBundle\Resolver\ComponentOptionsResolverTrait;
 use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 
 #[AsTwigComponent('breadcrumbItem', template: '@UIToolbox/ui/navigation/breadcrumb/breadcrumb_item.html.twig')]
-#[UIComponentDoc(
-    title: 'BreadcrumbItem',
-    description: 'Breadcrumb item navigation component based on DaisyUI',
-    tags: ['breadcrumbs', 'navigation', 'daisyui']
-)]
 class BreadcrumbItem
 {
     use ComponentOptionsResolverTrait;
