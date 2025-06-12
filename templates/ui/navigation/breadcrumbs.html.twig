@@ -1,0 +1,9 @@
+{% apply spaceless %}
+<div class="breadcrumbs {{ this.getClasses() }}">
+    <ul>
+        {% for item in items %}
+            <li>{{ item|raw }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endapply %}
