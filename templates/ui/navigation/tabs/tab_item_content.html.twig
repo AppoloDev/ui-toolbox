@@ -1,0 +1,7 @@
+{% apply spaceless %}
+    <div class="tab-content bg-base-100 border-base-300 p-6 {{ this.getClasses() }}">
+        {%- if block('content') is defined -%}
+            {{ block('content') }}
+        {%- endif -%}
+    </div>
+{% endapply %}

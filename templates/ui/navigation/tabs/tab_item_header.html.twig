@@ -1,0 +1,16 @@
+{% apply spaceless %}
+    {% if href %}
+        <a role="tab" class="tab{{ active ? ' tab-active' }} {{ this.getClasses() }}" href="{{ href }}">
+            {%- if block('content') is defined -%}
+                {{ block('content') }}
+            {%- endif -%}
+        </a>
+    {% else %}
+        <label class="tab {{ this.getClasses() }}">
+            <input type="radio" name="{{ id ? id : 'tabs' }}" {% if active %}checked="checked"{% endif%} />
+            {%- if block('content') is defined -%}
+                {{ block('content') }}
+            {%- endif -%}
+        </label>
+    {% endif %}
+{% endapply %}

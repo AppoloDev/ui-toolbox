@@ -1,0 +1,7 @@
+{% apply spaceless %}
+    <div role="tablist" class="{{ this.getClasses() }}">
+        {%- if block('content') is defined -%}
+            {{ block('content') }}
+        {%- endif -%}
+    </div>
+{% endapply %}

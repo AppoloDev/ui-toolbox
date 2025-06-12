@@ -77,3 +77,20 @@
 .collapse-plus
 .collapse-open
 .collapse-close
+
+/* Tabs class */
+.tabs
+.tab
+.tab-content
+.tabs-box
+.tabs-border
+.tabs-lift
+.tab-active
+.tab-disabled
+.tabs-top
+.tabs-bottom
+.tabs-xs
+.tabs-sm
+.tabs-md
+.tabs-lg
+.tabs-xl
