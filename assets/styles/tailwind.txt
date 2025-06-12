@@ -84,6 +84,20 @@
 .join-vertical
 .join-horizontal
 
+/* Loading class */
+.loading
+.loading-spinner
+.loading-dots
+.loading-ring
+.loading-ball
+.loading-bars
+.loading-infinity
+.loading-xs
+.loading-sm
+.loading-md
+.loading-lg
+.loading-xl
+
 /* Tabs class */
 .tabs
 .tab
@@ -100,3 +114,13 @@
 .tabs-md
 .tabs-lg
 .tabs-xl
+
+/* Text class */
+.text-primary
+.text-secondary
+.text-accent
+.text-neutral
+.text-info
+.text-success
+.text-warning
+.text-error
