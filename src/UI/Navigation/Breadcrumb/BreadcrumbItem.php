@@ -27,13 +27,13 @@ class BreadcrumbItem
     {
         $classes = [];
 
-        if (is_null($this->href)) {
+        if (null === $this->href) {
             $classes[] = '!cursor-default !hover:no-underline';
         }
         if ($this->class) {
             $classes[] = $this->class;
         }
 
-        return implode(' ', $classes);
+        return \implode(' ', $classes);
     }
 }

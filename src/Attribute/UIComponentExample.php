@@ -11,7 +11,7 @@ class UIComponentExample
         public string $title,
         public string $description = '',
         public array $props = [],
-        public ?string $templateName = null
+        public ?string $templateName = null,
     ) {
     }
 }

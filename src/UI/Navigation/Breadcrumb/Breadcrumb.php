@@ -44,6 +44,6 @@ class Breadcrumb
             $classes[] = $this->class;
         }
 
-        return implode(' ', $classes);
+        return \implode(' ', $classes);
     }
 }

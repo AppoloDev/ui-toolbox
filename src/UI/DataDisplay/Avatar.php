@@ -87,13 +87,13 @@ class Avatar
         }
 
         if ($this->placeholder !== null) {
-            $classes[] = "avatar-placeholder";
+            $classes[] = 'avatar-placeholder';
         }
 
         if ($this->class) {
             $classes[] = $this->class;
         }
 
-        return implode(' ', $classes);
+        return \implode(' ', $classes);
     }
 }

@@ -37,7 +37,7 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[UIComponentExample(
     title: 'Dashed buttons',
     description: 'Buttons with dashed borders',
-   templateName: '@UIToolboxDoc/examples/actions/button/dashed-buttons.html.twig',
+    templateName: '@UIToolboxDoc/examples/actions/button/dashed-buttons.html.twig',
 )]
 #[UIComponentExample(
     title: 'Ghost and link buttons',
@@ -52,12 +52,12 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[UIComponentExample(
     title: 'Buttons with any HTML tags',
     description: 'Buttons rendered using different HTML elements',
-   templateName: '@UIToolboxDoc/examples/actions/button/anytag-buttons.html.twig',
+    templateName: '@UIToolboxDoc/examples/actions/button/anytag-buttons.html.twig',
 )]
 #[UIComponentExample(
     title: 'Disabled button',
     description: 'Button can be disabled using either the disabled attribute or a class',
-   templateName:  '@UIToolboxDoc/examples/actions/button/disabled-button.html.twig',
+    templateName:  '@UIToolboxDoc/examples/actions/button/disabled-button.html.twig',
 )]
 #[UIComponentExample(
     title: 'Square and circle buttons with icon',
