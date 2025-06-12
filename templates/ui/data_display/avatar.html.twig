@@ -1,6 +1,6 @@
 {% apply spaceless %}
 <div class="avatar{{ status ? ' avatar-'~status }}{{ placeholder ? ' avatar-placeholder' }}" {{- attributes -}}>
-    <div class="{{ class }}">
+    <div class="{{ this.getClasses }}">
         {% if placeholder is not null %}
             <span>{{ placeholder }}</span>
         {% elseif src is defined %}
