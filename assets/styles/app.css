@@ -3,8 +3,4 @@
 @plugin "../vendor/daisyui/daisyui.index.js";
 
 @source "../../templates/**/*.twig";
-
-@source "../tailwind-safelist/accordion.txt";
-@source "../tailwind-safelist/avatar.txt";
-@source "../tailwind-safelist/badge.txt";
-@source "../tailwind-safelist/button.txt";
+@source "./tailwind.txt";
