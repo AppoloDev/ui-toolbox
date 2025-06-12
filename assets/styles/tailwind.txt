@@ -37,6 +37,10 @@
 .badge-lg
 .badge-xl
 
+/* Breadcrumbs class */
+.breadcrumbs
+.cursor-default
+
 /* Button class */
 .btn
 .btn-primary

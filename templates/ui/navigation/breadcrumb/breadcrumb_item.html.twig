@@ -1,0 +1,9 @@
+{% apply spaceless %}
+<li>
+    <{{ href ? 'a': 'span'}} {% if href %}href="{{ href }}" {% endif %} class="{{ this.getClasses() }}">
+        {%- if block('content') is defined -%}
+            {{ block('content') }}
+        {%- endif -%}
+    </{{ href ? 'a': 'span'}}>
+</li>
+{% endapply %}

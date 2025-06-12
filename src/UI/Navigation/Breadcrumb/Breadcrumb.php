@@ -1,6 +1,6 @@
 <?php
 
-namespace AppoloDev\UIToolboxBundle\UI\Navigation;
+namespace AppoloDev\UIToolboxBundle\UI\Navigation\Breadcrumb;
 
 use AppoloDev\UIToolboxBundle\Attribute\UIComponentDoc;
 use AppoloDev\UIToolboxBundle\Attribute\UIComponentExample;
@@ -8,39 +8,33 @@ use AppoloDev\UIToolboxBundle\Attribute\UIComponentProp;
 use AppoloDev\UIToolboxBundle\Resolver\ComponentOptionsResolverTrait;
 use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 
-#[AsTwigComponent('breadcrumbs', template: '@UIToolbox/ui/navigation/breadcrumbs.html.twig')]
+#[AsTwigComponent('breadcrumb', template: '@UIToolbox/ui/navigation/breadcrumb/breadcrumb.html.twig')]
 #[UIComponentDoc(
-    title: 'Breadcrumbs',
+    title: 'Breadcrumb',
     description: 'Breadcrumb navigation component based on DaisyUI',
     tags: ['breadcrumbs', 'navigation', 'daisyui']
 )]
 #[UIComponentExample(
     title: 'Breadcrumbs',
     description: 'Simple breadcrumb navigation',
-    templateName: '@UIToolboxDoc/examples/navigation/breadcrumbs/breadcrumbs.html.twig',
+    templateName: '@UIToolboxDoc/examples/navigation/breadcrumb/breadcrumb.html.twig',
 )]
 #[UIComponentExample(
     title: 'Breadcrumbs with icons',
     description: 'Breadcrumbs containing SVG icons alongside text',
-    templateName: '@UIToolboxDoc/examples/navigation/breadcrumbs/breadcrumbs-icons.html.twig',
+    templateName: '@UIToolboxDoc/examples/navigation/breadcrumb/breadcrumb-icons.html.twig',
 )]
 #[UIComponentExample(
     title: 'Breadcrumbs with max-width',
     description: 'Breadcrumbs layout with limited horizontal space',
-    templateName: '@UIToolboxDoc/examples/navigation/breadcrumbs/breadcrumbs-max-width.html.twig',
+    templateName: '@UIToolboxDoc/examples/navigation/breadcrumb/breadcrumb-max-width.html.twig',
 )]
-class Breadcrumbs
+class Breadcrumb
 {
     use ComponentOptionsResolverTrait;
 
     #[UIComponentProp(label: 'Classes CSS', type: 'string|null', description: 'Additional CSS classes', default: null)]
     public ?string $class = null;
-
-    #[UIComponentProp(label: 'ID', type: 'string|null', description: 'Breadcrumb id attribute', default: null)]
-    public ?string $id = null;
-
-    #[UIComponentProp(label: 'Items', type: 'array', description: 'Breadcrumb items as raw HTML elements')]
-    public array $items = [];
 
     public function getClasses(): string
     {
