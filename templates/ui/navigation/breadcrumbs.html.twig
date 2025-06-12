@@ -1,9 +1,7 @@
 {% apply spaceless %}
 <div class="breadcrumbs {{ this.getClasses() }}">
-    <ul>
-        {% for item in items %}
-            <li>{{ item|raw }}</li>
-        {% endfor %}
-    </ul>
+    {%- if block('content') is defined -%}
+        {{ block('content') }}
+    {%- endif -%}
 </div>
 {% endapply %}

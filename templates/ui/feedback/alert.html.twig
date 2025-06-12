@@ -1,5 +1,7 @@
 {% apply spaceless %}
 <div role="alert" class="{{ this.getClasses }}" {{- attributes -}}>
-    {{ block('content') }}
+    {%- if block('content') is defined -%}
+        {{ block('content') }}
+    {%- endif -%}
 </div>
 {% endapply %}

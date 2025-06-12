@@ -88,9 +88,6 @@ class Button
 {
     use ComponentOptionsResolverTrait;
 
-    #[UIComponentProp(label: 'Label', type: 'string', description: 'Text displayed in the button', default: '')]
-    public string $label = '';
-
     #[UIComponentProp(label: 'Couleur', type: 'string|null', description: 'Button color', default: null, acceptedValues: [null, 'primary', 'secondary', 'accent', 'info', 'success', 'warning', 'error', 'neutral'])]
     public ?string $color = null;
 
@@ -100,35 +97,11 @@ class Button
     #[UIComponentProp(label: 'Taille', type: 'string|null', description: 'Button size', default: null, acceptedValues: [null, 'xl', 'lg', 'md', 'sm', 'xs'])]
     public ?string $size = null;
 
-    #[UIComponentProp(label: 'État', type: 'string|null', description: 'Button state', default: null, acceptedValues: [null, 'active', 'disabled'])]
-    public ?string $state = null;
-
     #[UIComponentProp(label: 'Forme', type: 'string|null', description: 'Button shape', default: null, acceptedValues: [null, 'wide', 'block', 'square', 'circle'])]
     public ?string $shape = null;
 
     #[UIComponentProp(label: 'Classes CSS', type: 'string|null', description: 'Additional CSS classes', default: null)]
     public ?string $class = null;
-
-    #[UIComponentProp(label: 'Type', type: 'string', description: 'Type attribute', default: 'button', acceptedValues: ['button', 'submit', 'reset', 'radio', 'checkbox'])]
-    public string $type = 'button';
-
-    #[UIComponentProp(label: 'Nom', type: 'string|null', description: 'Button name attribute', default: null)]
-    public ?string $name = null;
-
-    #[UIComponentProp(label: 'Valeur', type: 'string|null', description: 'Button value attribute', default: null)]
-    public ?string $value = null;
-
-    #[UIComponentProp(label: 'ID', type: 'string|null', description: 'Button id attribute', default: null)]
-    public ?string $id = null;
-
-    #[UIComponentProp(
-        label: 'Désactivé',
-        type: 'bool|string|null',
-        description: 'Disables the button',
-        default: 'false',
-        acceptedValues: [true, false, 'true', 'false', null, '']
-    )]
-    public bool|string|null $disabled = false;
 
     #[UIComponentProp(
         label: 'Élément HTML',
@@ -139,24 +112,6 @@ class Button
     )]
     public string $element = 'button';
 
-    #[UIComponentProp(label: 'Href', type: 'string|null', description: 'Link href if element is "a"', default: null)]
-    public ?string $href = null;
-
-    #[UIComponentProp(label: 'Target', type: 'string|null', description: 'Link target', default: null)]
-    public ?string $target = null;
-
-    #[UIComponentProp(label: 'Rel', type: 'string|null', description: 'Link relation', default: null)]
-    public ?string $rel = null;
-
-    /**
-     * Get the complete CSS class string for the button.
-     *
-     * Note: Since these classes are dynamically generated at runtime,
-     * they need to be included in the tailwind-safelist.txt file
-     * to ensure they're included in the final CSS build.
-     *
-     * @see /assets/styles/tailwind-safelist.txt
-     */
     public function getClasses(): string
     {
         $classes = ['btn'];
@@ -173,13 +128,6 @@ class Button
             $classes[] = "btn-{$this->size}";
         }
 
-        if ($this->state === 'active') {
-            $classes[] = 'btn-active';
-        }
-        if ($this->state === 'disabled') {
-            $classes[] = 'btn-disabled';
-        }
-
         if ($this->shape) {
             $classes[] = "btn-{$this->shape}";
         }
@@ -189,10 +137,5 @@ class Button
         }
 
         return \implode(' ', $classes);
-    }
-
-    public function isDisabled(): bool
-    {
-        return $this->disabled === true || $this->disabled === 'true' || $this->state === 'disabled';
     }
 }

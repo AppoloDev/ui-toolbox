@@ -1,44 +1,5 @@
-{% if element == 'a' %}
-<a
-    href="{{ href|default('#') }}"
-    class="{{ this.getClasses() }}"
-    {% if id %}id="{{ id }}"{% endif %}
-    {% if target %}target="{{ target }}"{% endif %}
-    {% if rel %}rel="{{ rel }}"{% endif %}
-    {% if disabled or state == 'disabled' %}tabindex="-1" aria-disabled="true"{% endif %}
-    {{ attributes }}
->
+<{{ element }} class="{{ this.getClasses() }}" {{- attributes -}}>
     {%- if block('content') is defined -%}
         {{ block('content') }}
-    {%- else -%}
-        {{ label }}
     {%- endif -%}
-</a>
-{% elseif element == 'input' %}
-<input
-    type="{{ type }}"
-    class="{{ this.getClasses() }}"
-    {% if id %}id="{{ id }}"{% endif %}
-    {% if name %}name="{{ name }}"{% endif %}
-    {% if value %}value="{{ value }}"{% endif %}
-    {% if label %}value="{{ label }}"{% endif %}
-    {% if disabled is same as(true) or state == 'disabled' %}disabled{% endif %}
-    {{ attributes }}
-/>
-{% else %}
-<button
-    type="{{ type }}"
-    class="{{ this.getClasses() }}"
-    {% if id %}id="{{ id }}"{% endif %}
-    {% if name %}name="{{ name }}"{% endif %}
-    {% if value %}value="{{ value }}"{% endif %}
-    {% if disabled is same as(true) or state == 'disabled' %}disabled{% endif %}
-    {{ attributes }}
->
-    {%- if block('content') is defined -%}
-        {{ block('content') }}
-    {%- else -%}
-        {{ label }}
-    {%- endif -%}
-</button>
-{% endif %}
+</{{ element }}>

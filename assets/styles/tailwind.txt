@@ -59,6 +59,7 @@
 .btn-xl
 .btn-active
 .btn-disabled
+.cursor-not-allowed
 .btn-wide
 .btn-block
 .btn-square
