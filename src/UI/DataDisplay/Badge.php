@@ -45,11 +45,6 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
     templateName: '@UIToolboxDoc/examples/data_display/badge/ghost-badges.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Empty badges',
-    description: 'Badges without label, just styled containers',
-    templateName: '@UIToolboxDoc/examples/data_display/badge/empty-badges.html.twig',
-)]
-#[UIComponentExample(
     title: 'Badges with icons',
     description: 'Badges that include an inline icon SVG and a label',
     templateName: '@UIToolboxDoc/examples/data_display/badge/icon-badges.html.twig',
@@ -63,9 +58,6 @@ class Badge
 {
     use ComponentOptionsResolverTrait;
 
-    #[UIComponentProp(label: 'Label', type: 'string', description: 'Text displayed in the badge', default: '')]
-    public string $label = '';
-
     #[UIComponentProp(label: 'Couleur', type: 'string|null', description: 'Badge color', default: null, acceptedValues: [null, 'primary', 'secondary', 'accent', 'info', 'success', 'warning', 'error', 'neutral'])]
     public ?string $color = null;
 
@@ -77,9 +69,6 @@ class Badge
 
     #[UIComponentProp(label: 'Classes CSS', type: 'string|null', description: 'Additional CSS classes', default: null)]
     public ?string $class = null;
-
-    #[UIComponentProp(label: 'ID', type: 'string|null', description: 'Badge id attribute', default: null)]
-    public ?string $id = null;
 
     public function getClasses(): string
     {

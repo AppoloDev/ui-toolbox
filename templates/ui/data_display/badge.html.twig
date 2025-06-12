@@ -1,13 +1,5 @@
 {% apply spaceless %}
-<span
-    class="{{ this.getClasses() }}"
-    {% if id %}id="{{ id }}"{% endif %}
-    {{ attributes }}
->
-    {%- if block('content') is defined -%}
-        {{ block('content') }}
-    {%- else -%}
-        {{ label }}
-    {%- endif -%}
+<span class="{{ this.getClasses }}" {{- attributes -}}>
+   {{ block('content') }}
 </span>
 {% endapply %}
