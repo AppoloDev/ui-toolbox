@@ -63,23 +63,20 @@ class Avatar
 {
     use ComponentOptionsResolverTrait;
 
-    #[UIComponentProp(label: 'Image source', type: 'string|null', description: 'Avatar image URL', default: null)]
+    #[UIComponentProp(label: 'Image source', type: 'string|null', description: 'Avatar image URL. Not display if placeholder is provide', default: null)]
     public ?string $src = null;
 
     #[UIComponentProp(label: 'Image alt', type: 'string|null', description: 'Alternative text for image', default: null)]
     public ?string $alt = null;
 
-    #[UIComponentProp(label: 'Placeholder', type: 'string|null', description: 'Text to display as placeholder if no image is provided', default: null)]
+    #[UIComponentProp(label: 'Placeholder', type: 'string|null', description: 'Text to display as placeholder', default: null)]
     public ?string $placeholder = null;
 
-    #[UIComponentProp(label: 'Status', type: 'string|null', description: 'Online/offline presence indicator', acceptedValues: [null, 'avatar-online', 'avatar-offline'], default: null)]
+    #[UIComponentProp(label: 'Status', type: 'string|null', description: 'Online/offline presence indicator', acceptedValues: [null, 'online', 'offline'], default: null)]
     public ?string $status = null;
 
     #[UIComponentProp(label: 'Classes CSS', type: 'string|null', description: 'Additional CSS classes', default: null)]
     public ?string $class = null;
-
-    #[UIComponentProp(label: 'ID', type: 'string|null', description: 'Avatar id attribute', default: null)]
-    public ?string $id = null;
 
     public function getClasses(): string
     {
@@ -93,21 +90,10 @@ class Avatar
             $classes[] = "avatar-placeholder";
         }
 
-        // Note: size, mask, and rounded styles should now be passed via the 'class' property.
         if ($this->class) {
             $classes[] = $this->class;
         }
 
         return implode(' ', $classes);
-    }
-
-    public function getInnerClasses(): string
-    {
-        return '';
-    }
-
-    protected function resolveComponentOptions(array &$options): void
-    {
-        // No additional resolution required for placeholder
     }
 }

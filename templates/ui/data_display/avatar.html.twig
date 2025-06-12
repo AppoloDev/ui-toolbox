@@ -1,5 +1,5 @@
 {% apply spaceless %}
-<div class="avatar {{ status ? status }}{{ placeholder ? ' avatar-placeholder' }}">
+<div class="avatar{{ status ? ' avatar-'~status }}{{ placeholder ? ' avatar-placeholder' }}" {{- attributes -}}>
     <div class="{{ class }}">
         {% if placeholder is not null %}
             <span>{{ placeholder }}</span>
