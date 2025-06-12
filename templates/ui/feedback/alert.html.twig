@@ -1,3 +1,5 @@
+{% apply spaceless %}
 <div role="alert" class="alert {{ class }}" {{- attributes -}}>
     {{ block('content') }}
 </div>
+{% endapply %}
