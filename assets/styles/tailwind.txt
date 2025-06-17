@@ -141,3 +141,20 @@
 .text-success
 .text-warning
 .text-error
+
+/* Tooltip class */
+.tooltip
+.tooltip-content
+.tooltip-top
+.tooltip-bottom
+.tooltip-left
+.tooltip-right
+.tooltip-open
+.tooltip-neutral
+.tooltip-primary
+.tooltip-secondary
+.tooltip-accent
+.tooltip-info
+.tooltip-success
+.tooltip-warning
+.tooltip-error

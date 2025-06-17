@@ -1,0 +1,13 @@
+{% apply spaceless %}
+<div class="{{ this.getClasses }}" {{- attributes -}}>
+    <div class="tooltip-content">
+        {%- if block('tooltip_content') is defined -%}
+            {{ block('tooltip_content') }}
+        {%- endif -%}
+    </div>
+
+    {%- if block('content') is defined -%}
+        {{ block('content') }}
+    {%- endif -%}
+</div>
+{% endapply %}
