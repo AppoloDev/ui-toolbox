@@ -58,13 +58,13 @@ class Badge
 {
     use ComponentOptionsResolverTrait;
 
-    #[UIComponentProp(label: 'Couleur', type: 'string|null', description: 'Badge color', default: null, acceptedValues: [null, 'primary', 'secondary', 'accent', 'info', 'success', 'warning', 'error', 'neutral'])]
+    #[UIComponentProp(label: 'Color', type: 'string|null', description: 'Badge color', default: null, acceptedValues: [null, 'primary', 'secondary', 'accent', 'info', 'success', 'warning', 'error', 'neutral'])]
     public ?string $color = null;
 
     #[UIComponentProp(label: 'Style', type: 'string|null', description: 'Badge style', default: null, acceptedValues: [null, 'soft', 'outline', 'dash', 'ghost'])]
     public ?string $style = null;
 
-    #[UIComponentProp(label: 'Taille', type: 'string|null', description: 'Badge size', default: null, acceptedValues: [null, 'xl', 'lg', 'md', 'sm', 'xs'])]
+    #[UIComponentProp(label: 'Size', type: 'string|null', description: 'Badge size', default: null, acceptedValues: [null, 'xl', 'lg', 'md', 'sm', 'xs'])]
     public ?string $size = null;
 
     #[UIComponentProp(label: 'Classes CSS', type: 'string|null', description: 'Additional CSS classes', default: null)]

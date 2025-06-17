@@ -81,7 +81,7 @@ class Tabs
     #[UIComponentProp(label: 'Style', type: 'string|null', description: 'Tabs style', default: null, acceptedValues: [null, 'box', 'border', 'lift'])]
     public ?string $style = null;
 
-    #[UIComponentProp(label: 'Taille', type: 'string|null', description: 'Button size', default: null, acceptedValues: [null, 'xl', 'lg', 'md', 'sm', 'xs'])]
+    #[UIComponentProp(label: 'Size', type: 'string|null', description: 'Tab size', default: null, acceptedValues: [null, 'xl', 'lg', 'md', 'sm', 'xs'])]
     public ?string $size = null;
 
     #[UIComponentProp(label: 'Placement', type: 'string|null', description: 'Tabs style', default: 'top', acceptedValues: ['top', 'bottom'])]
@@ -89,8 +89,6 @@ class Tabs
 
     #[UIComponentProp(label: 'Classes CSS', type: 'string|null', description: 'Additional CSS classes', default: null)]
     public ?string $class = null;
-
-    // TODO: gérer id en private pour le passer au tabs header
 
     public function getClasses(): string
     {

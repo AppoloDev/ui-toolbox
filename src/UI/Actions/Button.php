@@ -94,10 +94,10 @@ class Button
     #[UIComponentProp(label: 'Style', type: 'string|null', description: 'Button style', default: null, acceptedValues: [null, 'soft', 'outline', 'dash', 'ghost', 'link'])]
     public ?string $style = null;
 
-    #[UIComponentProp(label: 'Taille', type: 'string|null', description: 'Button size', default: null, acceptedValues: [null, 'xl', 'lg', 'md', 'sm', 'xs'])]
+    #[UIComponentProp(label: 'Size', type: 'string|null', description: 'Button size', default: null, acceptedValues: [null, 'xl', 'lg', 'md', 'sm', 'xs'])]
     public ?string $size = null;
 
-    #[UIComponentProp(label: 'Forme', type: 'string|null', description: 'Button shape', default: null, acceptedValues: [null, 'wide', 'block', 'square', 'circle'])]
+    #[UIComponentProp(label: 'Shape', type: 'string|null', description: 'Button shape', default: null, acceptedValues: [null, 'wide', 'block', 'square', 'circle'])]
     public ?string $shape = null;
 
     #[UIComponentProp(label: 'Classes CSS', type: 'string|null', description: 'Additional CSS classes', default: null)]
