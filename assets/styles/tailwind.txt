@@ -142,6 +142,15 @@
 .text-warning
 .text-error
 
+/* Toast class */
+.toast
+.toast-start
+.toast-center
+.toast-end
+.toast-top
+.toast-middle
+.toast-bottom
+
 /* Tooltip class */
 .tooltip
 .tooltip-content
