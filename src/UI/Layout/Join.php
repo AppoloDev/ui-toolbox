@@ -55,8 +55,8 @@ class Join
     {
         $classes = ['join'];
 
-        if (!is_null($this->direction)) {
-            $classes[] = "join-".$this->direction;
+        if (null !== $this->direction) {
+            $classes[] = 'join-'.$this->direction;
         }
 
         if ($this->class) {

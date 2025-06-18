@@ -135,8 +135,8 @@ class Menu
             $classes[] = "menu-{$this->size}";
         }
 
-        if (!is_null($this->direction)) {
-            $classes[] = "menu-".$this->direction;
+        if (null !== $this->direction) {
+            $classes[] = 'menu-'.$this->direction;
         }
 
         if ($this->class) {
