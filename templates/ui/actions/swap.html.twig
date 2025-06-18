@@ -1,0 +1,17 @@
+{% apply spaceless %}
+<label class="{{ this.getClasses }}" {{- attributes -}}>
+    <input type="checkbox" />
+
+    <div class="swap-on">
+        {%- if block('swap_on') is defined -%}
+            {{ block('swap_on') }}
+        {%- endif -%}
+    </div>
+
+    <div class="swap-off">
+        {%- if block('swap_off') is defined -%}
+            {{ block('swap_off') }}
+        {%- endif -%}
+    </div>
+</label>
+{% endapply %}

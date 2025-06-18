@@ -130,6 +130,15 @@
 .menu-vertical
 .menu-horizontal
 
+/* Swap class */
+.swap
+.swap-on
+.swap-off
+.swap-indeterminate
+.swap-active
+.swap-rotate
+.swap-flip
+
 /* Tabs class */
 .tabs
 .tab
