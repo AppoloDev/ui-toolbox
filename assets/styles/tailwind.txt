@@ -78,6 +78,21 @@
 .collapse-open
 .collapse-close
 
+/* Divider class */
+.divider
+.divider-neutral
+.divider-primary
+.divider-secondary
+.divider-accent
+.divider-success
+.divider-warning
+.divider-info
+.divider-error
+.divider-vertical
+.divider-horizontal
+.divider-start
+.divider-end
+
 /* Join class */
 .join
 .join-item
