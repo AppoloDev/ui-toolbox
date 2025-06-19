@@ -182,6 +182,17 @@
 .text-warning
 .text-error
 
+/* Timeline class */
+.timeline
+.timeline-start
+.timeline-middle
+.timeline-end
+.timeline-snap-icon
+.timeline-box
+.timeline-compact
+.timeline-horizontal
+.timeline-vertical
+
 /* Toast class */
 .toast
 .toast-start
