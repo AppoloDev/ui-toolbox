@@ -86,7 +86,7 @@ class Timeline
 
     #[UIComponentProp(
         label: 'Direction',
-        type: "string|null",
+        type: 'string|null',
         description: 'Timeline orientation: vertical, horizontal',
         default: null,
         acceptedValues: [null, 'vertical', 'horizontal']
