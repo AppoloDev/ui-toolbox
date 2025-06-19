@@ -11,7 +11,7 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[AsTwigComponent('breadcrumb', template: '@UIToolbox/ui/navigation/breadcrumb/breadcrumb.html.twig')]
 #[UIComponentDoc(
     title: 'Breadcrumb',
-    description: 'Breadcrumb navigation component based on DaisyUI',
+    description: 'A customizable navigation component based on DaisyUI. Supports class.',
     tags: ['breadcrumbs', 'navigation', 'daisyui']
 )]
 #[UIComponentExample(
@@ -33,7 +33,7 @@ class Breadcrumb
 {
     use ComponentOptionsResolverTrait;
 
-    #[UIComponentProp(label: 'Classes CSS', type: 'string|null', description: 'Additional CSS classes', default: null)]
+    #[UIComponentProp(label: 'CSS Classes', type: 'string|null', description: 'Adds custom CSS classes for extra styling.', default: null)]
     public ?string $class = null;
 
     public function getClasses(): string

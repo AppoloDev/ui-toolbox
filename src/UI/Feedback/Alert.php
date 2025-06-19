@@ -11,7 +11,7 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[AsTwigComponent('alert', template: '@UIToolbox/ui/feedback/alert.html.twig')]
 #[UIComponentDoc(
     title: 'Alert',
-    description: 'A customizable alert component based on DaisyUI. Supports color variants and custom styling.',
+    description: 'A customizable feedback component based on DaisyUI. Supports color, style, and additional classes.',
     tags: ['alert', 'daisyui', 'UI', 'feedback']
 )]
 #[UIComponentExample(
@@ -53,13 +53,13 @@ class Alert
 {
     use ComponentOptionsResolverTrait;
 
-    #[UIComponentProp(label: 'Couleur', type: 'string|null', description: 'Alert color', default: null, acceptedValues: [null, 'info', 'success', 'warning', 'error'])]
+    #[UIComponentProp(label: 'Color', type: 'string|null', description: 'Defines the alert color.', default: null, acceptedValues: [null, 'info', 'success', 'warning', 'error'])]
     public ?string $color = null;
 
-    #[UIComponentProp(label: 'Style', type: 'string|null', description: 'Alert style', default: null, acceptedValues: [null, 'soft', 'outline', 'dash'])]
+    #[UIComponentProp(label: 'Style', type: 'string|null', description: 'Sets the visual style of the alert.', default: null, acceptedValues: [null, 'soft', 'outline', 'dash'])]
     public ?string $style = null;
 
-    #[UIComponentProp(label: 'Classes CSS', type: 'string|null', description: 'Additional CSS classes', default: null)]
+    #[UIComponentProp(label: 'CSS Classes', type: 'string|null', description: 'Adds custom CSS classes for extra styling.', default: null)]
     public ?string $class = null;
 
     public function getClasses(): string

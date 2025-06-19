@@ -12,7 +12,8 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[UIComponentDoc(
     title: 'Timeline',
     description: 'A customizable timeline component based on DaisyUI. Supports color, size, and more.',
-    tags: ['status', 'daisyui', 'UI']
+    tags: ['status', 'daisyui', 'UI'],
+    url: 'https://daisyui.com/components/timeline/'
 )]
 #[UIComponentExample(
     title: 'Timeline with text on both sides and icon',
@@ -83,10 +84,21 @@ class Timeline
 {
     use ComponentOptionsResolverTrait;
 
-    #[UIComponentProp(label: 'Direction', type: 'string|null', description: 'Direction', default: null, acceptedValues: [null, 'vertical', 'horizontal'])]
+    #[UIComponentProp(
+        label: 'Direction',
+        type: "string|null",
+        description: 'Timeline orientation: vertical, horizontal',
+        default: null,
+        acceptedValues: [null, 'vertical', 'horizontal']
+    )]
     public ?string $direction = null;
 
-    #[UIComponentProp(label: 'Classes CSS', type: 'string|null', description: 'Additional CSS classes', default: null)]
+    #[UIComponentProp(
+        label: 'CSS classes',
+        type: 'string|null',
+        description: 'Custom CSS classes to add to the timeline',
+        default: null
+    )]
     public ?string $class = null;
 
     public function getClasses(): string

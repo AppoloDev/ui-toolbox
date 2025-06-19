@@ -10,7 +10,7 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[AsTwigComponent('join', template: '@UIToolbox/ui/layout/join.html.twig')]
 #[UIComponentDoc(
     title: 'Join',
-    description: 'Group UI elements together (e.g. buttons, inputs) using DaisyUI’s join component.',
+    description: 'A customizable layout component based on DaisyUI. Supports direction, CSS classes.',
     tags: ['join', 'group', 'layout', 'UI']
 )]
 #[UIComponentExample(
@@ -45,10 +45,10 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 )]
 class Join
 {
-    #[UIComponentProp(label: 'Direction', type: 'string|null', description: 'Join direction', default: null, acceptedValues: [null, 'vertical', 'horizontal'])]
+    #[UIComponentProp(label: 'Direction', type: 'string|null', description: 'Sets the direction in which the elements are joined.', default: null, acceptedValues: [null, 'vertical', 'horizontal'])]
     public ?string $direction = null;
 
-    #[UIComponentProp(label: 'Classes CSS', type: 'string|null', description: 'Additional CSS classes', default: null)]
+    #[UIComponentProp(label: 'CSS Classes', type: 'string|null', description: 'Adds custom CSS classes for extra styling.', default: null)]
     public ?string $class = null;
 
     public function getClasses(): string

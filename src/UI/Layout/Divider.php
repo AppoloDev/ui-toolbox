@@ -11,7 +11,7 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[AsTwigComponent('divider', template: '@UIToolbox/ui/layout/divider.html.twig')]
 #[UIComponentDoc(
     title: 'Divider',
-    description: 'A customizable divider component based on DaisyUI. Supports color variants and custom styling.',
+    description: 'A customizable layout component based on DaisyUI. Supports color, direction, placement, CSS classes.',
     tags: ['divider', 'daisyui', 'UI', 'layout']
 )]
 #[UIComponentExample(
@@ -48,16 +48,16 @@ class Divider
 {
     use ComponentOptionsResolverTrait;
 
-    #[UIComponentProp(label: 'Color', type: 'string|null', description: 'Divider color', default: null, acceptedValues: [null, 'primary', 'secondary', 'accent', 'info', 'success', 'warning', 'error', 'neutral'])]
+    #[UIComponentProp(label: 'Color', type: 'string|null', description: 'Sets the color of the divider.', default: null, acceptedValues: [null, 'primary', 'secondary', 'accent', 'info', 'success', 'warning', 'error', 'neutral'])]
     public ?string $color = null;
 
-    #[UIComponentProp(label: 'Direction', type: 'string|null', description: 'Direction', default: null, acceptedValues: [null, 'vertical', 'horizontal'])]
+    #[UIComponentProp(label: 'Direction', type: 'string|null', description: 'Determines the orientation of the divider.', default: null, acceptedValues: [null, 'vertical', 'horizontal'])]
     public ?string $direction = null;
 
-    #[UIComponentProp(label: 'Placement', type: 'string|null', description: 'Placement', default: null, acceptedValues: [null, 'start', 'end'])]
+    #[UIComponentProp(label: 'Placement', type: 'string|null', description: 'Aligns the divider text to a specific position.', default: null, acceptedValues: [null, 'start', 'end'])]
     public ?string $placement = null;
 
-    #[UIComponentProp(label: 'Classes CSS', type: 'string|null', description: 'Additional CSS classes', default: null)]
+    #[UIComponentProp(label: 'CSS Classes', type: 'string|null', description: 'Adds custom CSS classes for extra styling.', default: null)]
     public ?string $class = null;
 
     public function getClasses(): string

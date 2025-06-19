@@ -11,19 +11,19 @@ class TabItemHeader
 {
     use ComponentOptionsResolverTrait;
 
-    #[UIComponentProp(label: 'Active', type: 'string|null', description: 'Active state', default: null)]
+    #[UIComponentProp(label: 'Active', type: 'string|null', description: 'Sets the active state.', default: null)]
     public ?bool $active = null;
 
-    #[UIComponentProp(label: 'Disabled', type: 'string|null', description: 'Disabled state', default: null)]
+    #[UIComponentProp(label: 'Disabled', type: 'string|null', description: 'Defines whether the tab is disabled.', default: null)]
     public ?bool $disabled = null;
 
-    #[UIComponentProp(label: 'Link', type: 'string|null', description: 'Anchor link', default: null)]
+    #[UIComponentProp(label: 'Link', type: 'string|null', description: 'Sets the URL of the tab.', default: null)]
     public ?string $href = null;
 
-    #[UIComponentProp(label: 'Classes CSS', type: 'string|null', description: 'Additional CSS classes', default: null)]
+    #[UIComponentProp(label: 'CSS Classes', type: 'string|null', description: 'Adds custom CSS classes for extra styling.', default: null)]
     public ?string $class = null;
 
-    #[UIComponentProp(label: 'ID', type: 'string|null', description: 'Custom ID for radio input', default: null)]
+    #[UIComponentProp(label: 'ID', type: 'string|null', description: 'Defines a custom ID for the radio input.', default: null)]
     public ?string $id = null;
 
     public function getClasses(): string

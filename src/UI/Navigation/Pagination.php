@@ -11,8 +11,7 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[AsTwigComponent('pagination', template: '@UIToolbox/ui/navigation/pagination/pagination.html.twig')]
 #[UIComponentDoc(
     title: 'Pagination',
-    description: 'Pagination component based on DaisyUI',
-    tags: ['pagination', 'navigation', 'daisyui']
+    description: 'A customizable navigation component based on DaisyUI. Supports class.'
 )]
 #[UIComponentExample(
     title: 'Default',
@@ -68,7 +67,7 @@ class Pagination
 {
     use ComponentOptionsResolverTrait;
 
-    #[UIComponentProp(label: 'Classes CSS', type: 'string|null', description: 'Additional CSS classes', default: null)]
+    #[UIComponentProp(label: 'CSS Classes', type: 'string|null', description: 'Adds custom CSS classes for extra styling.', default: null)]
     public ?string $class = null;
 
     public function getClasses(): string

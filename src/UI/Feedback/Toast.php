@@ -11,8 +11,9 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[AsTwigComponent('toast', template: '@UIToolbox/ui/feedback/toast.html.twig')]
 #[UIComponentDoc(
     title: 'Toast',
-    description: 'A customizable toast component based on DaisyUI.',
-    tags: ['toast', 'daisyui', 'UI', 'feedback']
+    description: 'A customizable feedback component based on DaisyUI. Supports CSS classes, horizontal position, vertical position.',
+    tags: ['status', 'daisyui', 'UI'],
+    url: 'https://daisyui.com/components/timeline/'
 )]
 #[UIComponentExample(
     title: 'Toast with alert inside',
@@ -68,13 +69,30 @@ class Toast
 {
     use ComponentOptionsResolverTrait;
 
-    #[UIComponentProp(label: 'Classes CSS', type: 'string|null', description: 'Additional CSS classes', default: null)]
+    #[UIComponentProp(
+        label: 'CSS Classes',
+        type: 'string|null',
+        description: 'Adds custom CSS classes for extra styling.',
+        default: null
+    )]
     public ?string $class = null;
 
-    #[UIComponentProp(label: 'Position horizontale', type: 'string|null', description: 'Horizontal position of the toast container', default: null, acceptedValues: [null, 'start', 'center', 'end'])]
+    #[UIComponentProp(
+        label: 'Horizontal Position',
+        type: 'string|null',
+        description: 'Determines the horizontal position of the toast.',
+        default: null,
+        acceptedValues: [null, 'start', 'center', 'end']
+    )]
     public ?string $horizontal = null;
 
-    #[UIComponentProp(label: 'Position verticale', type: 'string|null', description: 'Vertical position of the toast container', default: null, acceptedValues: [null, 'top', 'middle', 'bottom'])]
+    #[UIComponentProp(
+        label: 'Vertical Position',
+        type: 'string|null',
+        description: 'Determines the vertical position of the toast.',
+        default: null,
+        acceptedValues: [null, 'top', 'middle', 'bottom']
+    )]
     public ?string $vertical = null;
 
     public function getClasses(): string

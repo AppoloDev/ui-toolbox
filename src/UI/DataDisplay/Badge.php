@@ -58,16 +58,16 @@ class Badge
 {
     use ComponentOptionsResolverTrait;
 
-    #[UIComponentProp(label: 'Color', type: 'string|null', description: 'Badge color', default: null, acceptedValues: [null, 'primary', 'secondary', 'accent', 'info', 'success', 'warning', 'error', 'neutral'])]
+    #[UIComponentProp(label: 'Color', type: 'string|null', description: 'Sets the badge color.', default: null, acceptedValues: [null, 'primary', 'secondary', 'accent', 'info', 'success', 'warning', 'error', 'neutral'])]
     public ?string $color = null;
 
-    #[UIComponentProp(label: 'Style', type: 'string|null', description: 'Badge style', default: null, acceptedValues: [null, 'soft', 'outline', 'dash', 'ghost'])]
+    #[UIComponentProp(label: 'Style', type: 'string|null', description: 'Determines the visual style of the badge.', default: null, acceptedValues: [null, 'soft', 'outline', 'dash', 'ghost'])]
     public ?string $style = null;
 
-    #[UIComponentProp(label: 'Size', type: 'string|null', description: 'Badge size', default: null, acceptedValues: [null, 'xl', 'lg', 'md', 'sm', 'xs'])]
+    #[UIComponentProp(label: 'Size', type: 'string|null', description: 'Defines the badge size.', default: null, acceptedValues: [null, 'xl', 'lg', 'md', 'sm', 'xs'])]
     public ?string $size = null;
 
-    #[UIComponentProp(label: 'Classes CSS', type: 'string|null', description: 'Additional CSS classes', default: null)]
+    #[UIComponentProp(label: 'CSS Classes', type: 'string|null', description: 'Adds custom CSS classes for extra styling.', default: null)]
     public ?string $class = null;
 
     public function getClasses(): string

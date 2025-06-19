@@ -11,7 +11,7 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[AsTwigComponent('tabs', template: '@UIToolbox/ui/navigation/tabs/tabs.html.twig')]
 #[UIComponentDoc(
     title: 'Tabs',
-    description: 'Tabs navigation component based on DaisyUI',
+    description: 'A customizable navigation component based on DaisyUI. Supports style, size, placement, class.',
     tags: ['tabs', 'navigation', 'daisyui']
 )]
 #[UIComponentExample(
@@ -78,16 +78,16 @@ class Tabs
 {
     use ComponentOptionsResolverTrait;
 
-    #[UIComponentProp(label: 'Style', type: 'string|null', description: 'Tabs style', default: null, acceptedValues: [null, 'box', 'border', 'lift'])]
+    #[UIComponentProp(label: 'Style', type: 'string|null', description: 'Sets the visual style of the tabs.', default: null, acceptedValues: [null, 'box', 'border', 'lift'])]
     public ?string $style = null;
 
-    #[UIComponentProp(label: 'Size', type: 'string|null', description: 'Tab size', default: null, acceptedValues: [null, 'xl', 'lg', 'md', 'sm', 'xs'])]
+    #[UIComponentProp(label: 'Size', type: 'string|null', description: 'Defines the size of each tab.', default: null, acceptedValues: [null, 'xl', 'lg', 'md', 'sm', 'xs'])]
     public ?string $size = null;
 
-    #[UIComponentProp(label: 'Placement', type: 'string|null', description: 'Tabs style', default: 'top', acceptedValues: ['top', 'bottom'])]
+    #[UIComponentProp(label: 'Placement', type: 'string|null', description: 'Controls the vertical placement of the tab list.', default: 'top', acceptedValues: ['top', 'bottom'])]
     public string $placement = 'top';
 
-    #[UIComponentProp(label: 'Classes CSS', type: 'string|null', description: 'Additional CSS classes', default: null)]
+    #[UIComponentProp(label: 'CSS Classes', type: 'string|null', description: 'Adds custom CSS classes for extra styling.', default: null)]
     public ?string $class = null;
 
     public function getClasses(): string

@@ -11,7 +11,7 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[AsTwigComponent('tooltip', template: '@UIToolbox/ui/feedback/tooltip.html.twig')]
 #[UIComponentDoc(
     title: 'Tooltip',
-    description: 'A tooltip component based on DaisyUI. Supports position, forced display and color.',
+    description: 'A customizable feedback component based on DaisyUI. Supports position, color, CSS classes.',
     tags: ['tooltip', 'daisyui', 'overlay', 'hover']
 )]
 #[UIComponentExample(
@@ -43,13 +43,13 @@ class Tooltip
 {
     use ComponentOptionsResolverTrait;
 
-    #[UIComponentProp(label: 'Position', type: 'string|null', description: 'Tooltip position', default: null, acceptedValues: [null, 'top', 'bottom', 'left', 'right'])]
+    #[UIComponentProp(label: 'Position', type: 'string|null', description: 'Defines the tooltip position.', default: null, acceptedValues: [null, 'top', 'bottom', 'left', 'right'])]
     public ?string $position = null;
 
-    #[UIComponentProp(label: 'Couleur', type: 'string|null', description: 'Tooltip color', default: null, acceptedValues: [null, 'neutral', 'primary', 'secondary', 'accent', 'info', 'success', 'warning', 'error'])]
+    #[UIComponentProp(label: 'Color', type: 'string|null', description: 'Sets the tooltip color.', default: null, acceptedValues: [null, 'neutral', 'primary', 'secondary', 'accent', 'info', 'success', 'warning', 'error'])]
     public ?string $color = null;
 
-    #[UIComponentProp(label: 'Classes CSS', type: 'string|null', description: 'Additional CSS classes', default: null)]
+    #[UIComponentProp(label: 'CSS Classes', type: 'string|null', description: 'Adds custom CSS classes for extra styling.', default: null)]
     public ?string $class = null;
 
     public function getClasses(): string

@@ -11,7 +11,7 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[AsTwigComponent('avatar', template: '@UIToolbox/ui/data_display/avatar.html.twig')]
 #[UIComponentDoc(
     title: 'Avatar',
-    description: 'Avatar component based on DaisyUI. Supports image, initials, ring, presence indicator, group and more.',
+    description: 'A customizable data display component based on DaisyUI. Supports image source, alt text, placeholder, presence status, and custom classes.',
     tags: ['avatar', 'image', 'daisyui']
 )]
 #[UIComponentExample(
@@ -63,19 +63,19 @@ class Avatar
 {
     use ComponentOptionsResolverTrait;
 
-    #[UIComponentProp(label: 'Image source', type: 'string|null', description: 'Avatar image URL. Not display if placeholder is provide', default: null)]
+    #[UIComponentProp(label: 'Image Source', type: 'string|null', description: 'Defines the URL of the avatar image.', default: null)]
     public ?string $src = null;
 
-    #[UIComponentProp(label: 'Image alt', type: 'string|null', description: 'Alternative text for image', default: null)]
+    #[UIComponentProp(label: 'Image Alt', type: 'string|null', description: 'Provides alternative text for the image.', default: null)]
     public ?string $alt = null;
 
-    #[UIComponentProp(label: 'Placeholder', type: 'string|null', description: 'Text to display as placeholder', default: null)]
+    #[UIComponentProp(label: 'Placeholder', type: 'string|null', description: 'Displays a text placeholder if no image is provided.', default: null)]
     public ?string $placeholder = null;
 
-    #[UIComponentProp(label: 'Status', type: 'string|null', description: 'Online/offline presence indicator', acceptedValues: [null, 'online', 'offline'], default: null)]
+    #[UIComponentProp(label: 'Status', type: 'string|null', description: 'Indicates the presence status such as online or offline.', default: null, acceptedValues: [null, 'online', 'offline'])]
     public ?string $status = null;
 
-    #[UIComponentProp(label: 'Classes CSS', type: 'string|null', description: 'Additional CSS classes', default: null)]
+    #[UIComponentProp(label: 'CSS Classes', type: 'string|null', description: 'Adds custom CSS classes for extra styling.', default: null)]
     public ?string $class = null;
 
     public function getClasses(): string

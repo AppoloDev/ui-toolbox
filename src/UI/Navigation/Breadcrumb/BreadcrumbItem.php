@@ -11,10 +11,10 @@ class BreadcrumbItem
 {
     use ComponentOptionsResolverTrait;
 
-    #[UIComponentProp(label: 'Classes CSS', type: 'string|null', description: 'Additional CSS classes', default: null)]
+    #[UIComponentProp(label: 'CSS Classes', type: 'string|null', description: 'Adds custom CSS classes for extra styling.', default: null)]
     public ?string $class = null;
 
-    #[UIComponentProp(label: 'Link', type: 'string|null', description: 'Anchor link', default: null)]
+    #[UIComponentProp(label: 'Link', type: 'string|null', description: 'Defines the anchor link destination.', default: null)]
     public ?string $href = null;
 
     public function getClasses(): string

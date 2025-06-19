@@ -124,7 +124,7 @@ class Menu
     #[UIComponentProp(label: 'Direction', type: 'string|null', description: 'Menu direction', default: null, acceptedValues: [null, 'vertical', 'horizontal'])]
     public ?string $direction = null;
 
-    #[UIComponentProp(label: 'Classes CSS', type: 'string|null', description: 'Additional CSS classes', default: null)]
+    #[UIComponentProp(label: 'CSS Classes', description: 'Adds custom CSS classes for extra styling.')]
     public ?string $class = null;
 
     public function getClasses(): string

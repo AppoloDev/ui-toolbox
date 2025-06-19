@@ -11,6 +11,7 @@ class UIComponentDoc
         public string $title,
         public string $description = '',
         public array $tags = [],
+        public ?string $url = null,
     ) {
     }
 }

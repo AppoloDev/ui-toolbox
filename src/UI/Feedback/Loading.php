@@ -11,7 +11,7 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[AsTwigComponent('loading', template: '@UIToolbox/ui/feedback/loading.html.twig')]
 #[UIComponentDoc(
     title: 'Loading',
-    description: 'A loading animation component with various styles and sizes.',
+    description: 'A customizable feedback component based on DaisyUI. Supports color, style, size, class.',
     tags: ['loading', 'animation', 'UI', 'feedback']
 )]
 #[UIComponentExample(
@@ -53,16 +53,39 @@ class Loading
 {
     use ComponentOptionsResolverTrait;
 
-    #[UIComponentProp(label: 'Couleur', type: 'string|null', description: 'Button color', default: null, acceptedValues: [null, 'primary', 'secondary', 'accent', 'info', 'success', 'warning', 'error', 'neutral'])]
+    #[UIComponentProp(
+        label: 'Color',
+        type: 'string|null',
+        description: 'Sets the color style.',
+        default: null,
+        acceptedValues: [null, 'primary', 'secondary', 'accent', 'info', 'success', 'warning', 'error', 'neutral']
+    )]
     public ?string $color = null;
 
-    #[UIComponentProp(label: 'Style', type: 'string|null', description: 'Loading style', default: null, acceptedValues: [null, 'spinner', 'dots', 'ring', 'ball', 'bars', 'infinity'])]
+    #[UIComponentProp(
+        label: 'Style',
+        type: 'string|null',
+        description: 'Defines the animation style.',
+        default: null,
+        acceptedValues: [null, 'spinner', 'dots', 'ring', 'ball', 'bars', 'infinity']
+    )]
     public ?string $style = null;
 
-    #[UIComponentProp(label: 'Size', type: 'string|null', description: 'Loading size', default: null, acceptedValues: [null, 'xs', 'sm', 'md', 'lg', 'xl'])]
+    #[UIComponentProp(
+        label: 'Size',
+        type: 'string|null',
+        description: 'Controls the size of the animation.',
+        default: null,
+        acceptedValues: [null, 'xs', 'sm', 'md', 'lg', 'xl']
+    )]
     public ?string $size = null;
 
-    #[UIComponentProp(label: 'Classes CSS', type: 'string|null', description: 'Additional CSS classes', default: null)]
+    #[UIComponentProp(
+        label: 'CSS Classes',
+        type: 'string|null',
+        description: 'Adds custom CSS classes for extra styling.',
+        default: null
+    )]
     public ?string $class = null;
 
     public function getClasses(): string

@@ -11,7 +11,7 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[AsTwigComponent('status', template: '@UIToolbox/ui/data_display/status.html.twig')]
 #[UIComponentDoc(
     title: 'Status',
-    description: 'A customizable status component based on DaisyUI. Supports color, size, and more.',
+    description: 'A customizable status component based on DaisyUI. Supports color, size, CSS classes.',
     tags: ['status', 'daisyui', 'UI']
 )]
 #[UIComponentExample(
@@ -43,13 +43,13 @@ class Status
 {
     use ComponentOptionsResolverTrait;
 
-    #[UIComponentProp(label: 'Color', type: 'string|null', description: 'Status color', default: null, acceptedValues: [null, 'primary', 'secondary', 'accent', 'info', 'success', 'warning', 'error', 'neutral'])]
+    #[UIComponentProp(label: 'Color', type: 'string|null', description: 'Sets the status color.', default: null, acceptedValues: [null, 'primary', 'secondary', 'accent', 'info', 'success', 'warning', 'error', 'neutral'])]
     public ?string $color = null;
 
-    #[UIComponentProp(label: 'Size', type: 'string|null', description: 'Status size', default: null, acceptedValues: [null, 'xl', 'lg', 'md', 'sm', 'xs'])]
+    #[UIComponentProp(label: 'Size', type: 'string|null', description: 'Sets the status size.', default: null, acceptedValues: [null, 'xl', 'lg', 'md', 'sm', 'xs'])]
     public ?string $size = null;
 
-    #[UIComponentProp(label: 'Classes CSS', type: 'string|null', description: 'Additional CSS classes', default: null)]
+    #[UIComponentProp(label: 'CSS Classes', type: 'string|null', description: 'Adds custom CSS classes for extra styling.', default: null)]
     public ?string $class = null;
 
     public function getClasses(): string

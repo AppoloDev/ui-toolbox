@@ -11,8 +11,9 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[AsTwigComponent('button', template: '@UIToolbox/ui/actions/button.html.twig')]
 #[UIComponentDoc(
     title: 'Button',
-    description: 'A customizable button component based on DaisyUI. Supports color, size, style, state, shape, and more.',
-    tags: ['button', 'daisyui', 'form', 'UI']
+    description: 'A customizable action element based on DaisyUI. Supports color, size, style, shape, class, element.',
+    tags: ['button', 'daisyui', 'form', 'UI'],
+    url: 'https://daisyui.com/components/button/',
 )]
 #[UIComponentExample(
     title: 'Button sizes',
@@ -88,25 +89,54 @@ class Button
 {
     use ComponentOptionsResolverTrait;
 
-    #[UIComponentProp(label: 'Couleur', type: 'string|null', description: 'Button color', default: null, acceptedValues: [null, 'primary', 'secondary', 'accent', 'info', 'success', 'warning', 'error', 'neutral'])]
+    #[UIComponentProp(
+        label: 'Color',
+        type: 'string|null',
+        description: 'Defines the color style such as primary, secondary, or accent.',
+        default: null,
+        acceptedValues: [null, 'primary', 'secondary', 'accent', 'info', 'success', 'warning', 'error', 'neutral']
+    )]
     public ?string $color = null;
 
-    #[UIComponentProp(label: 'Style', type: 'string|null', description: 'Button style', default: null, acceptedValues: [null, 'soft', 'outline', 'dash', 'ghost', 'link'])]
+    #[UIComponentProp(
+        label: 'Style',
+        type: 'string|null',
+        description: 'Specifies the visual style such as soft, outline, or ghost.',
+        default: null,
+        acceptedValues: [null, 'soft', 'outline', 'dash', 'ghost', 'link']
+    )]
     public ?string $style = null;
 
-    #[UIComponentProp(label: 'Size', type: 'string|null', description: 'Button size', default: null, acceptedValues: [null, 'xl', 'lg', 'md', 'sm', 'xs'])]
+    #[UIComponentProp(
+        label: 'Size',
+        type: 'string|null',
+        description: 'Determines the size, for example large or small.',
+        default: null,
+        acceptedValues: [null, 'xl', 'lg', 'md', 'sm', 'xs']
+    )]
     public ?string $size = null;
 
-    #[UIComponentProp(label: 'Shape', type: 'string|null', description: 'Button shape', default: null, acceptedValues: [null, 'wide', 'block', 'square', 'circle'])]
+    #[UIComponentProp(
+        label: 'Shape',
+        type: 'string|null',
+        description: 'Applies a shape such as wide, block, square, or circle.',
+        default: null,
+        acceptedValues: [null, 'wide', 'block', 'square', 'circle']
+    )]
     public ?string $shape = null;
 
-    #[UIComponentProp(label: 'Classes CSS', type: 'string|null', description: 'Additional CSS classes', default: null)]
+    #[UIComponentProp(
+        label: 'CSS Classes',
+        type: 'string|null',
+        description: 'Adds custom CSS classes for extra styling.',
+        default: null
+    )]
     public ?string $class = null;
 
     #[UIComponentProp(
-        label: 'Élément HTML',
+        label: 'HTML Element',
         type: 'string',
-        description: 'HTML element used',
+        description: 'Selects the HTML element to render, such as button, anchor, or input.',
         default: 'button',
         acceptedValues: ['button', 'a', 'input']
     )]
