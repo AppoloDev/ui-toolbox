@@ -11,8 +11,8 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[AsTwigComponent('breadcrumb', template: '@UIToolbox/ui/navigation/breadcrumb/breadcrumb.html.twig')]
 #[UIComponentDoc(
     title: 'Breadcrumb',
-    description: 'A customizable navigation component based on DaisyUI. Supports class.',
-    tags: ['breadcrumbs', 'navigation', 'daisyui']
+    description: 'A customizable breadcrumb component based on DaisyUI. Supports class.',
+    url: 'https://daisyui.com/components/breadcrumbs/',
 )]
 #[UIComponentExample(
     title: 'Breadcrumbs',

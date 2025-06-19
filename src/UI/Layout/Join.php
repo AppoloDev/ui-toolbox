@@ -10,8 +10,8 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[AsTwigComponent('join', template: '@UIToolbox/ui/layout/join.html.twig')]
 #[UIComponentDoc(
     title: 'Join',
-    description: 'A customizable layout component based on DaisyUI. Supports direction, CSS classes.',
-    tags: ['join', 'group', 'layout', 'UI']
+    description: 'A customizable join component based on DaisyUI. Supports direction, CSS classes.',
+    url: 'https://daisyui.com/components/join/',
 )]
 #[UIComponentExample(
     title: 'Join',

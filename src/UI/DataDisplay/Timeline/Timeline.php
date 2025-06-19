@@ -12,7 +12,6 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[UIComponentDoc(
     title: 'Timeline',
     description: 'A customizable timeline component based on DaisyUI. Supports color, size, and more.',
-    tags: ['status', 'daisyui', 'UI'],
     url: 'https://daisyui.com/components/timeline/'
 )]
 #[UIComponentExample(

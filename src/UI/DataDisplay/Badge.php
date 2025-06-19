@@ -12,7 +12,7 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[UIComponentDoc(
     title: 'Badge',
     description: 'A customizable badge component based on DaisyUI. Supports color, size, style, and more.',
-    tags: ['badge', 'daisyui', 'UI']
+    url: 'https://daisyui.com/components/badge/',
 )]
 #[UIComponentExample(
     title: 'Badge sizes',

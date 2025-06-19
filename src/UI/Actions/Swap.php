@@ -12,7 +12,6 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[UIComponentDoc(
     title: 'Swap',
     description: 'A customizable action component based on DaisyUI. Supports style, class.',
-    tags: ['swap', 'daisyui', 'form', 'UI'],
     url: 'https://daisyui.com/components/swap/'
 )]
 #[UIComponentExample(

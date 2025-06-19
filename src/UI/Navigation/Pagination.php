@@ -11,7 +11,8 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[AsTwigComponent('pagination', template: '@UIToolbox/ui/navigation/pagination/pagination.html.twig')]
 #[UIComponentDoc(
     title: 'Pagination',
-    description: 'A customizable navigation component based on DaisyUI. Supports class.'
+    description: 'A customizable pagination component based on DaisyUI. Supports class.',
+    url: 'https://daisyui.com/components/button/',
 )]
 #[UIComponentExample(
     title: 'Default',

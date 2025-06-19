@@ -11,8 +11,8 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[AsTwigComponent('loading', template: '@UIToolbox/ui/feedback/loading.html.twig')]
 #[UIComponentDoc(
     title: 'Loading',
-    description: 'A customizable feedback component based on DaisyUI. Supports color, style, size, class.',
-    tags: ['loading', 'animation', 'UI', 'feedback']
+    description: 'A customizable loading component based on DaisyUI. Supports color, style, size, class.',
+    url: 'https://daisyui.com/components/loading/',
 )]
 #[UIComponentExample(
     title: 'Loading spinner',

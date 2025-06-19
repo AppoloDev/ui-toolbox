@@ -12,7 +12,7 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[UIComponentDoc(
     title: 'Avatar',
     description: 'A customizable data display component based on DaisyUI. Supports image source, alt text, placeholder, presence status, and custom classes.',
-    tags: ['avatar', 'image', 'daisyui']
+    url: 'https://daisyui.com/components/avatar/',
 )]
 #[UIComponentExample(
     title: 'Avatar',

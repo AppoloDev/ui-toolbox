@@ -11,8 +11,8 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[AsTwigComponent('alert', template: '@UIToolbox/ui/feedback/alert.html.twig')]
 #[UIComponentDoc(
     title: 'Alert',
-    description: 'A customizable feedback component based on DaisyUI. Supports color, style, and additional classes.',
-    tags: ['alert', 'daisyui', 'UI', 'feedback']
+    description: 'A customizable alert component based on DaisyUI. Supports color, style, and additional classes.',
+    url: 'https://daisyui.com/components/alert/',
 )]
 #[UIComponentExample(
     title: 'Alert',

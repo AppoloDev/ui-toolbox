@@ -11,8 +11,8 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[AsTwigComponent('divider', template: '@UIToolbox/ui/layout/divider.html.twig')]
 #[UIComponentDoc(
     title: 'Divider',
-    description: 'A customizable layout component based on DaisyUI. Supports color, direction, placement, CSS classes.',
-    tags: ['divider', 'daisyui', 'UI', 'layout']
+    description: 'A customizable divider component based on DaisyUI. Supports color, direction, placement, CSS classes.',
+    url: 'https://daisyui.com/components/divider/',
 )]
 #[UIComponentExample(
     title: 'Divider',

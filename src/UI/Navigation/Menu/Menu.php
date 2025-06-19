@@ -12,7 +12,7 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[UIComponentDoc(
     title: 'Menu',
     description: 'Menu navigation component based on DaisyUI',
-    tags: ['menu', 'navigation', 'daisyui']
+    url: 'https://daisyui.com/components/menu/',
 )]
 #[UIComponentExample(
     title: 'Menu',

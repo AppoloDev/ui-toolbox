@@ -11,8 +11,8 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[AsTwigComponent('tabs', template: '@UIToolbox/ui/navigation/tabs/tabs.html.twig')]
 #[UIComponentDoc(
     title: 'Tabs',
-    description: 'A customizable navigation component based on DaisyUI. Supports style, size, placement, class.',
-    tags: ['tabs', 'navigation', 'daisyui']
+    description: 'A customizable tabs component based on DaisyUI. Supports style, size, placement, class.',
+    url: 'https://daisyui.com/components/tab/',
 )]
 #[UIComponentExample(
     title: 'Tabs (default)',

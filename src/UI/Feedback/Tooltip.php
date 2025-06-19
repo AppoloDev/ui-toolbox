@@ -11,8 +11,8 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[AsTwigComponent('tooltip', template: '@UIToolbox/ui/feedback/tooltip.html.twig')]
 #[UIComponentDoc(
     title: 'Tooltip',
-    description: 'A customizable feedback component based on DaisyUI. Supports position, color, CSS classes.',
-    tags: ['tooltip', 'daisyui', 'overlay', 'hover']
+    description: 'A customizable tooltip component based on DaisyUI. Supports position, color, CSS classes.',
+    url: 'https://daisyui.com/components/tooltip/',
 )]
 #[UIComponentExample(
     title: 'Tooltip',

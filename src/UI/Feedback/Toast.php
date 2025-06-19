@@ -11,9 +11,8 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[AsTwigComponent('toast', template: '@UIToolbox/ui/feedback/toast.html.twig')]
 #[UIComponentDoc(
     title: 'Toast',
-    description: 'A customizable feedback component based on DaisyUI. Supports CSS classes, horizontal position, vertical position.',
-    tags: ['status', 'daisyui', 'UI'],
-    url: 'https://daisyui.com/components/timeline/'
+    description: 'A customizable toast component based on DaisyUI. Supports CSS classes, horizontal position, vertical position.',
+    url: 'https://daisyui.com/components/toast/'
 )]
 #[UIComponentExample(
     title: 'Toast with alert inside',

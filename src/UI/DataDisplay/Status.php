@@ -12,7 +12,7 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[UIComponentDoc(
     title: 'Status',
     description: 'A customizable status component based on DaisyUI. Supports color, size, CSS classes.',
-    tags: ['status', 'daisyui', 'UI']
+    url: 'https://daisyui.com/components/status/',
 )]
 #[UIComponentExample(
     title: 'Status',

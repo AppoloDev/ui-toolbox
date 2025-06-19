@@ -10,7 +10,6 @@ class UIComponentDoc
     public function __construct(
         public string $title,
         public string $description = '',
-        public array $tags = [],
         public ?string $url = null,
     ) {
     }

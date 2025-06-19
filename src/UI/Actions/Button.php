@@ -12,7 +12,6 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[UIComponentDoc(
     title: 'Button',
     description: 'A customizable action element based on DaisyUI. Supports color, size, style, shape, class, element.',
-    tags: ['button', 'daisyui', 'form', 'UI'],
     url: 'https://daisyui.com/components/button/',
 )]
 #[UIComponentExample(
