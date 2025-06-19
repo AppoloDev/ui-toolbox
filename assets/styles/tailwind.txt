@@ -146,6 +146,20 @@
 .status-lg
 .status-xl
 
+/* Steps class */
+.step
+.step-icon
+.step-neutral
+.step-primary
+.step-secondary
+.step-accent
+.step-info
+.step-success
+.step-warning
+.step-error
+.steps-vertical
+.steps-horizontal
+
 /* Swap class */
 .swap
 .swap-on
