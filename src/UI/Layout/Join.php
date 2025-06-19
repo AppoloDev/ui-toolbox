@@ -14,33 +14,33 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
     url: 'https://daisyui.com/components/join/',
 )]
 #[UIComponentExample(
-    title: 'Join',
-    description: 'Basic join group with buttons',
+    title: 'Horizontal group of buttons',
+    description: 'Displays buttons styled as a single joined element horizontally.',
     templateName: '@UIToolboxDoc/examples/layout/join/join.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Group items vertically',
-    description: 'Join items stacked vertically',
+    title: 'Vertical stack of elements',
+    description: 'Displays elements stacked vertically in a joined layout.',
     templateName: '@UIToolboxDoc/examples/layout/join/join-vertical.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Responsive: vertical on small screen, horizontal on large',
-    description: 'Join layout adapting to screen size',
+    title: 'Responsive horizontal/vertical layout',
+    description: 'Adapts the layout direction based on screen size: vertical on small screens and horizontal on large.',
     templateName: '@UIToolboxDoc/examples/layout/join/join-responsive.html.twig',
 )]
 #[UIComponentExample(
-    title: 'With extra elements in the group',
-    description: 'Join group with mixed elements (input, select, button)',
+    title: 'Group with mixed form elements',
+    description: 'Includes input, select, and button elements within a joined group.',
     templateName: '@UIToolboxDoc/examples/layout/join/join-extra.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Custom border radius',
-    description: 'Join with a rounded border on the last button',
+    title: 'Rounded border on last element',
+    description: 'Adds a custom rounded border to the last item in the joined group.',
     templateName: '@UIToolboxDoc/examples/layout/join/join-rounded.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Join radio inputs with button style',
-    description: 'Join group with styled radio inputs',
+    title: 'Styled radio input group',
+    description: 'Displays radio buttons styled and joined to appear as a unified group.',
     templateName: '@UIToolboxDoc/examples/layout/join/join-radio.html.twig',
 )]
 class Join

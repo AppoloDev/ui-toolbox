@@ -15,48 +15,48 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
     url: 'https://daisyui.com/components/avatar/',
 )]
 #[UIComponentExample(
-    title: 'Avatar',
-    description: 'Simple avatar image',
+    title: 'Basic avatar',
+    description: 'Displays a basic avatar using an image.',
     templateName: '@UIToolboxDoc/examples/data_display/avatar/avatar.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Avatar in custom sizes',
-    description: 'Avatars with different size classes',
+    title: 'Avatar sizes',
+    description: 'Displays avatars using various predefined sizes.',
     templateName: '@UIToolboxDoc/examples/data_display/avatar/avatar-sizes.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Avatar rounded',
-    description: 'Avatars with various border-radius styles',
+    title: 'Rounded avatars',
+    description: 'Displays avatars with different rounded styles.',
     templateName: '@UIToolboxDoc/examples/data_display/avatar/avatar-rounded.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Avatar with mask',
-    description: 'Avatars using mask classes to create custom shapes',
+    title: 'Masked avatars',
+    description: 'Uses mask classes to display avatars with custom shapes.',
     templateName: '@UIToolboxDoc/examples/data_display/avatar/avatar-masked.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Avatar with ring',
-    description: 'Avatars with ring indicators using Tailwind ring utilities',
+    title: 'Avatar with ring indicator',
+    description: 'Displays a ring indicator around avatars using Tailwind utilities.',
     templateName: '@UIToolboxDoc/examples/data_display/avatar/avatar-ring.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Avatar with presence indicator',
-    description: 'Avatars with online/offline indicators',
+    title: 'Avatar with presence',
+    description: 'Displays avatars with online or offline presence indicators.',
     templateName: '@UIToolboxDoc/examples/data_display/avatar/avatar-status.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Avatar placeholder',
-    description: 'Avatars displaying placeholder text instead of an image',
+    title: 'Avatar with placeholder',
+    description: 'Displays a placeholder instead of an image when no avatar is provided.',
     templateName: '@UIToolboxDoc/examples/data_display/avatar/avatar-placeholder.html.twig',
 )]
 #[UIComponentExample(
     title: 'Avatar group',
-    description: 'Multiple avatars grouped together with spacing',
+    description: 'Groups multiple avatars with spacing for collective display.',
     templateName: '@UIToolboxDoc/examples/data_display/avatar/avatar-group.html.twig',
 )]
 #[UIComponentExample(
     title: 'Avatar group with counter',
-    description: 'Grouped avatars with a counter indicator as placeholder',
+    description: 'Includes a counter placeholder when the number of avatars exceeds the visible limit.',
     templateName: '@UIToolboxDoc/examples/data_display/avatar/avatar-group-counter.html.twig',
 )]
 class Avatar

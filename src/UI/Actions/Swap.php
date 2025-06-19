@@ -15,28 +15,28 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
     url: 'https://daisyui.com/components/swap/'
 )]
 #[UIComponentExample(
-    title: 'Swap text',
-    description: 'Text swaps on toggle',
+    title: 'Text swap',
+    description: 'Displays text that toggles on interaction.',
     templateName: '@UIToolboxDoc/examples/actions/swap/swap-text.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Swap volume icons',
-    description: 'Volume on/off icons swap',
+    title: 'Volume toggle',
+    description: 'Displays volume icons that toggle between on and off.',
     templateName: '@UIToolboxDoc/examples/actions/swap/swap-volume-icons.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Swap icons with rotate effect',
-    description: 'Icons swap with rotate transition',
+    title: 'Icon swap with rotate',
+    description: 'Displays icons that rotate when toggled.',
     templateName: '@UIToolboxDoc/examples/actions/swap/swap-rotate.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Hamburger button',
-    description: 'Hamburger icon toggle for menu',
+    title: 'Hamburger menu toggle',
+    description: 'Displays a hamburger icon that toggles to a close icon.',
     templateName: '@UIToolboxDoc/examples/actions/swap/swap-hamburger.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Swap icons with flip effect',
-    description: 'Icons flip on toggle',
+    title: 'Icon swap with flip',
+    description: 'Displays icons that flip horizontally when toggled.',
     templateName: '@UIToolboxDoc/examples/actions/swap/swap-flip.html.twig',
 )]
 class Swap

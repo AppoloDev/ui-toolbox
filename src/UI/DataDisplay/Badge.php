@@ -15,43 +15,43 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
     url: 'https://daisyui.com/components/badge/',
 )]
 #[UIComponentExample(
-    title: 'Badge sizes',
-    description: 'Badges with different sizes',
+    title: 'Size variations',
+    description: 'Displays badges in different sizes from extra small to extra large.',
     templateName: '@UIToolboxDoc/examples/data_display/badge/sized-badges.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Badge colors',
-    description: 'Badges with different color variants',
+    title: 'Color variants',
+    description: 'Displays badges with various color themes.',
     templateName: '@UIToolboxDoc/examples/data_display/badge/colored-badges.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Soft badges',
-    description: 'Soft styled badges for all DaisyUI color variants',
+    title: 'Soft style',
+    description: 'Provides badges with a soft visual appearance for all colors.',
     templateName: '@UIToolboxDoc/examples/data_display/badge/soft-styled-badges.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Outline badges',
-    description: 'Outline styled badges for all DaisyUI color variants',
+    title: 'Outline style',
+    description: 'Displays badges using an outline style across all color options.',
     templateName: '@UIToolboxDoc/examples/data_display/badge/outline-badges.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Dashed badges',
-    description: 'Badges with dashed borders',
+    title: 'Dashed borders',
+    description: 'Uses dashed border styles for badges.',
     templateName: '@UIToolboxDoc/examples/data_display/badge/dashed-badges.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Ghost badges',
-    description: 'Ghost styled badges',
+    title: 'Ghost style',
+    description: 'Applies a ghost effect style to badges.',
     templateName: '@UIToolboxDoc/examples/data_display/badge/ghost-badges.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Badges with icons',
-    description: 'Badges that include an inline icon SVG and a label',
+    title: 'With icons',
+    description: 'Includes inline SVG icons alongside the badge labels.',
     templateName: '@UIToolboxDoc/examples/data_display/badge/icon-badges.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Badges in buttons',
-    description: 'Badges displayed as notification indicators inside buttons',
+    title: 'Inside buttons',
+    description: 'Places badges within buttons as notification indicators.',
     templateName: '@UIToolboxDoc/examples/data_display/badge/button-badges.html.twig',
 )]
 class Badge

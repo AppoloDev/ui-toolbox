@@ -15,53 +15,53 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
     url: 'https://daisyui.com/components/toast/'
 )]
 #[UIComponentExample(
-    title: 'Toast with alert inside',
-    description: 'Basic toast component with an alert',
+    title: 'Alert Toast',
+    description: 'Displays a toast containing an alert for notification purposes.',
     templateName: '@UIToolboxDoc/examples/feedback/toast/toast-alert.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Toast top and start',
-    description: 'Toast aligned top and start',
+    title: 'Top Start Position',
+    description: 'Positions the toast at the top and start (left) of the viewport.',
     templateName: '@UIToolboxDoc/examples/feedback/toast/toast-top-start.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Toast top and center',
-    description: 'Toast aligned top and center',
+    title: 'Top Center Position',
+    description: 'Places the toast at the top and center of the viewport.',
     templateName: '@UIToolboxDoc/examples/feedback/toast/toast-top-center.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Toast top and end',
-    description: 'Toast aligned top and end',
+    title: 'Top End Position',
+    description: 'Positions the toast at the top and end (right) of the viewport.',
     templateName: '@UIToolboxDoc/examples/feedback/toast/toast-top-end.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Toast middle and start',
-    description: 'Toast aligned middle and start',
+    title: 'Middle Start Position',
+    description: 'Shows the toast vertically centered and aligned to the start (left).',
     templateName: '@UIToolboxDoc/examples/feedback/toast/toast-middle-start.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Toast middle and center',
-    description: 'Toast aligned middle and center',
+    title: 'Middle Center Position',
+    description: 'Displays the toast at the vertical and horizontal center of the viewport.',
     templateName: '@UIToolboxDoc/examples/feedback/toast/toast-middle-center.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Toast middle and end',
-    description: 'Toast aligned middle and end',
+    title: 'Middle End Position',
+    description: 'Places the toast vertically centered at the end (right) of the viewport.',
     templateName: '@UIToolboxDoc/examples/feedback/toast/toast-middle-end.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Toast bottom and start',
-    description: 'Toast aligned bottom and start',
+    title: 'Bottom Start Position',
+    description: 'Positions the toast at the bottom and start (left) of the viewport.',
     templateName: '@UIToolboxDoc/examples/feedback/toast/toast-bottom-start.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Toast bottom and center',
-    description: 'Toast aligned bottom and center',
+    title: 'Bottom Center Position',
+    description: 'Shows the toast at the bottom and centered horizontally.',
     templateName: '@UIToolboxDoc/examples/feedback/toast/toast-bottom-center.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Toast bottom and end',
-    description: 'Toast aligned bottom and end',
+    title: 'Bottom End Position',
+    description: 'Displays the toast at the bottom and end (right) of the viewport.',
     templateName: '@UIToolboxDoc/examples/feedback/toast/toast-bottom-end.html.twig',
 )]
 class Toast

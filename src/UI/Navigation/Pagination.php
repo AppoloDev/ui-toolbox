@@ -15,53 +15,53 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
     url: 'https://daisyui.com/components/button/',
 )]
 #[UIComponentExample(
-    title: 'Default',
-    description: 'Default pagination navigation',
+    title: 'Basic pagination',
+    description: 'Displays a standard horizontal pagination with default style.',
     templateName: '@UIToolboxDoc/examples/navigation/pagination/pagination-default.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Disabled',
-    description: 'Pagination with disabled state',
+    title: 'Pagination with disabled items',
+    description: 'Displays pagination controls with disabled states for some pages.',
     templateName: '@UIToolboxDoc/examples/navigation/pagination/pagination-disabled.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Control: Arrow',
-    description: 'Pagination using arrow controls',
+    title: 'Pagination with arrow controls',
+    description: 'Uses arrow buttons for navigating between pages.',
     templateName: '@UIToolboxDoc/examples/navigation/pagination/pagination-arrow.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Control: Button',
-    description: 'Pagination using button controls',
+    title: 'Pagination with numbered buttons',
+    description: 'Includes numbered button controls for direct page access.',
     templateName: '@UIToolboxDoc/examples/navigation/pagination/pagination-button.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Variant: Ghost',
-    description: 'Pagination with ghost variant',
+    title: 'Ghost style pagination',
+    description: 'Applies the ghost visual variant for a minimal style.',
     templateName: '@UIToolboxDoc/examples/navigation/pagination/pagination-ghost.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Variant: Soft',
-    description: 'Pagination with soft variant',
+    title: 'Soft style pagination',
+    description: 'Provides a soft variant with subtle background styling.',
     templateName: '@UIToolboxDoc/examples/navigation/pagination/pagination-soft.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Variant: Outline',
-    description: 'Pagination with outline variant',
+    title: 'Outline style pagination',
+    description: 'Uses outline buttons to emphasize page boundaries.',
     templateName: '@UIToolboxDoc/examples/navigation/pagination/pagination-outline.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Shape: Circle',
-    description: 'Pagination with circle shape',
+    title: 'Circular pagination',
+    description: 'Displays pagination items with a circular shape.',
     templateName: '@UIToolboxDoc/examples/navigation/pagination/pagination-circle.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Orientation: Vertical',
-    description: 'Vertical pagination navigation',
+    title: 'Vertical pagination',
+    description: 'Displays pagination controls stacked vertically.',
     templateName: '@UIToolboxDoc/examples/navigation/pagination/pagination-vertical.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Size',
-    description: 'Pagination with different sizes',
+    title: 'Pagination with custom sizes',
+    description: 'Provides pagination items in multiple predefined sizes.',
     templateName: '@UIToolboxDoc/examples/navigation/pagination/pagination-size.html.twig',
 )]
 class Pagination

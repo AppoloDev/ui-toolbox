@@ -15,33 +15,33 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
     url: 'https://daisyui.com/components/divider/',
 )]
 #[UIComponentExample(
-    title: 'Divider',
-    description: 'Basic divider with text',
+    title: 'Default Divider',
+    description: 'Displays a basic divider with centered text.',
     templateName: '@UIToolboxDoc/examples/layout/divider/divider.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Divider horizontal',
-    description: 'Divider explicitly set to horizontal',
+    title: 'Horizontal Divider',
+    description: 'Displays a divider with an explicit horizontal orientation.',
     templateName: '@UIToolboxDoc/examples/layout/divider/divider-horizontal.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Divider with no text',
-    description: 'Divider used as a line without text content',
+    title: 'Divider without Text',
+    description: 'Displays a divider line without any text.',
     templateName: '@UIToolboxDoc/examples/layout/divider/divider-no-text.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Divider with colors',
-    description: 'Dividers using different color variants',
+    title: 'Colored Divider',
+    description: 'Uses different color variants to style the divider.',
     templateName: '@UIToolboxDoc/examples/layout/divider/divider-colors.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Divider in different positions',
-    description: 'Dividers with text aligned to start or end',
+    title: 'Aligned Text Divider',
+    description: 'Aligns the divider text to the start or end position.',
     templateName: '@UIToolboxDoc/examples/layout/divider/divider-positions.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Divider in different positions (horizontal)',
-    description: 'Dividers in horizontal orientation with varied text alignment',
+    title: 'Horizontal Text Alignment',
+    description: 'Displays horizontal dividers with start, center, or end text alignment.',
     templateName: '@UIToolboxDoc/examples/layout/divider/divider-positions-horizontal.html.twig',
 )]
 class Divider

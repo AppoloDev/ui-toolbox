@@ -15,8 +15,8 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
     url: 'https://daisyui.com/components/tooltip/',
 )]
 #[UIComponentExample(
-    title: 'Tooltip',
-    description: 'Basic tooltip',
+    title: 'Basic Tooltip',
+    description: 'Displays a basic tooltip with default behavior.',
     templateName: '@UIToolboxDoc/examples/feedback/tooltip/tooltip.html.twig',
 )]
 #[UIComponentExample(
@@ -25,18 +25,18 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
     templateName: '@UIToolboxDoc/examples/feedback/tooltip/tooltip-content.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Force open',
-    description: 'Tooltip with force-open modifier',
+    title: 'Open Tooltip',
+    description: 'Displays a tooltip that is always visible.',
     templateName: '@UIToolboxDoc/examples/feedback/tooltip/tooltip-open.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Positions',
-    description: 'Tooltip with top, right, bottom, left placements',
+    title: 'Tooltip Positions',
+    description: 'Displays tooltips in different positions: top, bottom, left, and right.',
     templateName: '@UIToolboxDoc/examples/feedback/tooltip/tooltip-positions.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Colors',
-    description: 'Tooltip with color modifiers',
+    title: 'Colored Tooltip',
+    description: 'Displays a tooltip with primary text color styling.',
     templateName: '@UIToolboxDoc/examples/feedback/tooltip/tooltip-colors.html.twig',
 )]
 class Tooltip

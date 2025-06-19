@@ -15,63 +15,63 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
     url: 'https://daisyui.com/components/tab/',
 )]
 #[UIComponentExample(
-    title: 'Tabs (default)',
-    description: 'Basic tab layout',
+    title: 'Basic horizontal tabs',
+    description: 'Displays a horizontal layout with default tab style.',
     templateName: '@UIToolboxDoc/examples/navigation/tabs/tabs.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Tabs - Border style',
-    description: 'Tabs with border style',
+    title: 'Tabs with border style',
+    description: 'Displays tabs using the border style for separation.',
     templateName: '@UIToolboxDoc/examples/navigation/tabs/tabs-border.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Tabs - Lift style',
-    description: 'Tabs with lift style',
+    title: 'Tabs with lift style',
+    description: 'Uses the lift style to give a floating appearance to tabs.',
     templateName: '@UIToolboxDoc/examples/navigation/tabs/tabs-lift.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Tabs - Box style',
-    description: 'Tabs with box style',
+    title: 'Tabs with box style',
+    description: 'Displays tabs as individual boxes with spacing.',
     templateName: '@UIToolboxDoc/examples/navigation/tabs/tabs-box.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Tabs Box with radio inputs',
-    description: 'Tabs using radio inputs with box style',
+    title: 'Box-style tabs with radio inputs',
+    description: 'Uses radio inputs to control box-styled tab selection.',
     templateName: '@UIToolboxDoc/examples/navigation/tabs/tabs-box-radio.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Tabs - Size variations',
-    description: 'Tabs with size variants (xs to xl)',
+    title: 'Tabs with size options',
+    description: 'Provides size variants from extra small to extra large.',
     templateName: '@UIToolboxDoc/examples/navigation/tabs/tabs-sizes.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Tabs Border with tab content',
-    description: 'Radio tabs with border style and associated content',
+    title: 'Border tabs with content',
+    description: 'Displays radio-based border tabs with associated content panels.',
     templateName: '@UIToolboxDoc/examples/navigation/tabs/tabs-border-content.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Tabs Lift with tab content',
-    description: 'Radio tabs with lift style and content',
+    title: 'Lift tabs with content',
+    description: 'Displays lift-style radio tabs with associated content.',
     templateName: '@UIToolboxDoc/examples/navigation/tabs/tabs-lift-content.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Tabs Lift with icons',
-    description: 'Radio tabs with lift style and icons',
+    title: 'Lift tabs with icons',
+    description: 'Includes icons in lift-style radio tabs.',
     templateName: '@UIToolboxDoc/examples/navigation/tabs/tabs-lift-icons.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Tabs Lift with bottom content',
-    description: 'Radio tabs with lift style and content on bottom',
+    title: 'Lift tabs with bottom content',
+    description: 'Displays lift-style radio tabs with content positioned below.',
     templateName: '@UIToolboxDoc/examples/navigation/tabs/tabs-lift-bottom.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Tabs Box with tab content',
-    description: 'Radio tabs with box style and content',
+    title: 'Box tabs with content',
+    description: 'Displays box-style radio tabs with corresponding content.',
     templateName: '@UIToolboxDoc/examples/navigation/tabs/tabs-box-content.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Tabs with custom color',
-    description: 'Tabs with custom background and border color',
+    title: 'Tabs with custom colors',
+    description: 'Applies custom background and border colors to tabs.',
     templateName: '@UIToolboxDoc/examples/navigation/tabs/tabs-custom-color.html.twig',
 )]
 class Tabs

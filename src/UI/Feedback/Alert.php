@@ -15,38 +15,38 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
     url: 'https://daisyui.com/components/alert/',
 )]
 #[UIComponentExample(
-    title: 'Alert',
-    description: 'Simple alert with icon and message',
+    title: 'Basic Alert with Icon',
+    description: 'Displays a simple alert containing an icon and a message.',
     templateName: '@UIToolboxDoc/examples/feedback/alert/alert.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Alert colors',
-    description: 'Alerts with different color variants',
+    title: 'Alert Color Variants',
+    description: 'Shows alerts in multiple color schemes to indicate different statuses.',
     templateName: '@UIToolboxDoc/examples/feedback/alert/alert-colors.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Alert soft style',
-    description: 'Soft style alert variant for different colors',
+    title: 'Soft Style Alert',
+    description: 'Provides a soft background style for alerts in various colors.',
     templateName: '@UIToolboxDoc/examples/feedback/alert/alert-soft.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Alert outline style',
-    description: 'Outline style alert variant for different colors',
+    title: 'Outline Style Alert',
+    description: 'Uses an outlined border appearance for alerts across colors.',
     templateName: '@UIToolboxDoc/examples/feedback/alert/alert-outline.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Alert dash style',
-    description: 'Dashed border style alert variant for different colors',
+    title: 'Dashed Border Alert',
+    description: 'Displays alerts with a dashed border style for visual emphasis.',
     templateName: '@UIToolboxDoc/examples/feedback/alert/alert-dash.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Alert with buttons + responsive',
-    description: 'Alert layout with buttons and responsive direction',
+    title: 'Alert with Buttons and Responsive Layout',
+    description: 'Includes interactive buttons and adapts the layout responsively.',
     templateName: '@UIToolboxDoc/examples/feedback/alert/alert-with-buttons.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Alert with title and description',
-    description: 'Alert with heading and description layout',
+    title: 'Alert with Heading and Description',
+    description: 'Displays an alert featuring a heading and supporting description text.',
     templateName: '@UIToolboxDoc/examples/feedback/alert/alert-title-description.html.twig',
 )]
 class Alert

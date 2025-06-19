@@ -15,28 +15,28 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
     url: 'https://daisyui.com/components/status/',
 )]
 #[UIComponentExample(
-    title: 'Status',
-    description: 'Basic usage of status',
+    title: 'Basic status',
+    description: 'Displays a simple status indicator with default styling.',
     templateName: '@UIToolboxDoc/examples/data_display/status/default.html.twig',
 )]
 #[UIComponentExample(
     title: 'Status sizes',
-    description: 'Statuses with different sizes',
+    description: 'Displays status indicators in multiple size options.',
     templateName: '@UIToolboxDoc/examples/data_display/status/sizes.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Status with colors',
-    description: 'Statuses with different color variants',
+    title: 'Colored status indicators',
+    description: 'Displays status indicators using different color variants.',
     templateName: '@UIToolboxDoc/examples/data_display/status/colors.html.twig',
 )]
 #[UIComponentExample(
     title: 'Status with ping animation',
-    description: 'Statuses with ping animation effect',
+    description: 'Displays status indicators with a ping animation effect.',
     templateName: '@UIToolboxDoc/examples/data_display/status/ping.html.twig',
 )]
 #[UIComponentExample(
     title: 'Status with bounce animation',
-    description: 'Statuses with bounce animation effect',
+    description: 'Displays status indicators with a bounce animation effect.',
     templateName: '@UIToolboxDoc/examples/data_display/status/bounce.html.twig',
 )]
 class Status

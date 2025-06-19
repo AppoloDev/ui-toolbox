@@ -15,68 +15,68 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
     url: 'https://daisyui.com/components/timeline/'
 )]
 #[UIComponentExample(
-    title: 'Timeline with text on both sides and icon',
-    description: 'Displays events on both sides of the timeline with icons',
+    title: 'Both sides with icons',
+    description: 'Displays events on both sides of the timeline with icons.',
     templateName: '@UIToolboxDoc/examples/data_display/timeline/both-sides-with-icon.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Timeline with bottom side only',
-    description: 'All events are displayed on the bottom side of the timeline',
+    title: 'Bottom side only',
+    description: 'Displays all events on the bottom side of the timeline.',
     templateName: '@UIToolboxDoc/examples/data_display/timeline/bottom-side-only.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Timeline with top side only',
-    description: 'All events are displayed on the top side of the timeline',
+    title: 'Top side only',
+    description: 'Displays all events on the top side of the timeline.',
     templateName: '@UIToolboxDoc/examples/data_display/timeline/top-side-only.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Timeline with different sides',
-    description: 'Events alternate between top and bottom sides',
+    title: 'Alternating sides',
+    description: 'Displays events alternating between top and bottom sides.',
     templateName: '@UIToolboxDoc/examples/data_display/timeline/different-sides.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Timeline with colorful lines',
-    description: 'Timeline using different colors for lines and dots',
+    title: 'Colorful lines',
+    description: 'Displays the timeline using different colors for lines and dots.',
     templateName: '@UIToolboxDoc/examples/data_display/timeline/colorful-lines.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Timeline without icons',
-    description: 'Timeline entries without any icons',
+    title: 'No icons',
+    description: 'Displays timeline entries without any icons.',
     templateName: '@UIToolboxDoc/examples/data_display/timeline/no-icons.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Vertical timeline with text on both sides and icon',
-    description: 'Vertical timeline with text on both sides and icons',
+    title: 'Vertical both sides with icons',
+    description: 'Displays a vertical timeline with text on both sides and icons.',
     templateName: '@UIToolboxDoc/examples/data_display/timeline/vertical-both-sides-with-icon.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Vertical timeline with right side only',
-    description: 'Vertical timeline with all entries on the right',
+    title: 'Vertical right side only',
+    description: 'Displays a vertical timeline with all entries on the right.',
     templateName: '@UIToolboxDoc/examples/data_display/timeline/vertical-right-side-only.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Vertical timeline with left side only',
-    description: 'Vertical timeline with all entries on the left',
+    title: 'Vertical left side only',
+    description: 'Displays a vertical timeline with all entries on the left.',
     templateName: '@UIToolboxDoc/examples/data_display/timeline/vertical-left-side-only.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Vertical timeline with different sides',
-    description: 'Vertical timeline with entries on alternating sides',
+    title: 'Vertical alternating sides',
+    description: 'Displays a vertical timeline with entries on alternating sides.',
     templateName: '@UIToolboxDoc/examples/data_display/timeline/vertical-different-sides.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Vertical timeline with colorful lines',
-    description: 'Vertical timeline using multiple colors',
+    title: 'Vertical colorful lines',
+    description: 'Displays a vertical timeline using multiple colors.',
     templateName: '@UIToolboxDoc/examples/data_display/timeline/vertical-colorful-lines.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Vertical timeline without icons',
-    description: 'Vertical timeline without any icons',
+    title: 'Vertical no icons',
+    description: 'Displays a vertical timeline without any icons.',
     templateName: '@UIToolboxDoc/examples/data_display/timeline/vertical-no-icons.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Timeline with icon snapped to the start',
-    description: 'Icons are aligned at the start of each timeline entry',
+    title: 'Icon aligned start',
+    description: 'Displays icons aligned at the start of each timeline entry.',
     templateName: '@UIToolboxDoc/examples/data_display/timeline/icon-start.html.twig',
 )]
 class Timeline

@@ -15,18 +15,18 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
     url: 'https://daisyui.com/components/breadcrumbs/',
 )]
 #[UIComponentExample(
-    title: 'Breadcrumbs',
-    description: 'Simple breadcrumb navigation',
+    title: 'Basic breadcrumb navigation',
+    description: 'Displays a simple horizontal breadcrumb trail with text links.',
     templateName: '@UIToolboxDoc/examples/navigation/breadcrumb/breadcrumb.html.twig',
 )]
 #[UIComponentExample(
     title: 'Breadcrumbs with icons',
-    description: 'Breadcrumbs containing SVG icons alongside text',
+    description: 'Displays breadcrumb items with SVG icons placed next to text.',
     templateName: '@UIToolboxDoc/examples/navigation/breadcrumb/breadcrumb-icons.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Breadcrumbs with max-width',
-    description: 'Breadcrumbs layout with limited horizontal space',
+    title: 'Breadcrumbs with constrained width',
+    description: 'Limits the breadcrumb layout to a maximum horizontal width for compact design.',
     templateName: '@UIToolboxDoc/examples/navigation/breadcrumb/breadcrumb-max-width.html.twig',
 )]
 class Breadcrumb

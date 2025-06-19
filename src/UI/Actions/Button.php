@@ -15,73 +15,73 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
     url: 'https://daisyui.com/components/button/',
 )]
 #[UIComponentExample(
-    title: 'Button sizes',
-    description: 'Buttons with different sizes',
+    title: 'Sizes: Small to Extra Large',
+    description: 'Displays all available button sizes from extra small to extra large.',
     templateName: '@UIToolboxDoc/examples/actions/button/sized-buttons.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Button colors',
-    description: 'Buttons with different color variants',
+    title: 'Colors: All Variants',
+    description: 'Shows each button color variant supported by DaisyUI.',
     templateName:  '@UIToolboxDoc/examples/actions/button/colored-buttons.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Soft buttons',
-    description: 'Soft styled buttons for all DaisyUI color variants',
+    title: 'Soft Style: All Colors',
+    description: 'Applies the soft visual style to every DaisyUI color option.',
     templateName: '@UIToolboxDoc/examples/actions/button/soft-styled-buttons.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Outline buttons',
-    description: 'Outline styled buttons for all DaisyUI color variants',
+    title: 'Outline Style: All Colors',
+    description: 'Applies the outline visual style to every DaisyUI color option.',
     templateName:  '@UIToolboxDoc/examples/actions/button/outline-buttons.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Dashed buttons',
-    description: 'Buttons with dashed borders',
+    title: 'Dashed Style: All Colors',
+    description: 'Applies a dashed border style to each color variant.',
     templateName: '@UIToolboxDoc/examples/actions/button/dashed-buttons.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Ghost and link buttons',
-    description: 'Minimalist button styles: ghost and link',
+    title: 'Minimalist Styles: Ghost and Link',
+    description: 'Uses ghost and link styles for minimalist button appearance.',
     templateName: '@UIToolboxDoc/examples/actions/button/minimalist-buttons.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Wide button',
-    description: 'Button with full width style',
+    title: 'Wide Shape: Full Width',
+    description: 'Stretches the button to take the full available width.',
     templateName:  '@UIToolboxDoc/examples/actions/button/wide-buttons.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Buttons with any HTML tags',
-    description: 'Buttons rendered using different HTML elements',
+    title: 'HTML Element Variants',
+    description: 'Renders the button using various HTML elements such as button, anchor, and input.',
     templateName: '@UIToolboxDoc/examples/actions/button/anytag-buttons.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Disabled button',
-    description: 'Button can be disabled using either the disabled attribute or a class',
+    title: 'Disabled State',
+    description: 'Shows how the button appears and behaves when disabled.',
     templateName:  '@UIToolboxDoc/examples/actions/button/disabled-button.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Square and circle buttons with icon',
-    description: 'Buttons using only an icon with square or circle shape',
+    title: 'Icon Only: Square and Circle',
+    description: 'Shows icon-only buttons with square and circle shapes.',
     templateName: '@UIToolboxDoc/examples/actions/button/square-and-circle-buttons.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Button with icon and text',
-    description: 'Icon displayed alongside label',
+    title: 'Icon and Text',
+    description: 'Places an icon next to the button label for visual emphasis.',
     templateName:  '@UIToolboxDoc/examples/actions/button/icon-buttons.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Block button',
-    description: 'Block level button taking full container width',
+    title: 'Block Shape: Full Container Width',
+    description: 'Expands the button to occupy the entire width of its container.',
     templateName:  '@UIToolboxDoc/examples/actions/button/block-buttons.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Button with loading spinner',
-    description: 'Button with loading indicator',
+    title: 'Loading State',
+    description: 'Displays a button with a loading spinner to indicate progress.',
     templateName: '@UIToolboxDoc/examples/actions/button/loading-buttons.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Login buttons',
-    description: 'Buttons used for authentication with popular services.',
+    title: 'Authentication Buttons',
+    description: 'Presents login buttons styled for popular authentication services.',
     templateName: '@UIToolboxDoc/examples/actions/button/login-buttons.html.twig',
 )]
 class Button

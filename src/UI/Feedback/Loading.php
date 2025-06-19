@@ -11,42 +11,41 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 #[AsTwigComponent('loading', template: '@UIToolbox/ui/feedback/loading.html.twig')]
 #[UIComponentDoc(
     title: 'Loading',
-    description: 'A customizable loading component based on DaisyUI. Supports color, style, size, class.',
-    url: 'https://daisyui.com/components/loading/',
+    description: 'A customizable loading component based on DaisyUI. Supports color, style, size, and custom classes.'
 )]
 #[UIComponentExample(
-    title: 'Loading spinner',
-    description: 'Spinner loading animation',
+    title: 'Spinner animation',
+    description: 'Displays a spinner loading animation.',
     templateName: '@UIToolboxDoc/examples/feedback/loading/loading-spinner.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Loading dots',
-    description: 'Dots loading animation',
+    title: 'Dots animation',
+    description: 'Shows a loading animation with dots.',
     templateName: '@UIToolboxDoc/examples/feedback/loading/loading-dots.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Loading ring',
-    description: 'Ring loading animation',
+    title: 'Ring animation',
+    description: 'Displays a ring style loading animation.',
     templateName: '@UIToolboxDoc/examples/feedback/loading/loading-ring.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Loading ball',
-    description: 'Ball loading animation',
+    title: 'Ball animation',
+    description: 'Shows a ball style loading animation.',
     templateName: '@UIToolboxDoc/examples/feedback/loading/loading-ball.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Loading bars',
-    description: 'Bars loading animation',
+    title: 'Bars animation',
+    description: 'Displays a bars style loading animation.',
     templateName: '@UIToolboxDoc/examples/feedback/loading/loading-bars.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Loading infinity',
-    description: 'Infinity loading animation',
+    title: 'Infinity animation',
+    description: 'Displays an infinity style loading animation.',
     templateName: '@UIToolboxDoc/examples/feedback/loading/loading-infinity.html.twig',
 )]
 #[UIComponentExample(
-    title: 'Loading with colors',
-    description: 'Loading animation with color classes',
+    title: 'Color variants',
+    description: 'Demonstrates loading animations with color options.',
     templateName: '@UIToolboxDoc/examples/feedback/loading/loading-colors.html.twig',
 )]
 class Loading
@@ -56,7 +55,7 @@ class Loading
     #[UIComponentProp(
         label: 'Color',
         type: 'string|null',
-        description: 'Sets the color style.',
+        description: 'Defines the color variant to use.',
         default: null,
         acceptedValues: [null, 'primary', 'secondary', 'accent', 'info', 'success', 'warning', 'error', 'neutral']
     )]
@@ -65,7 +64,7 @@ class Loading
     #[UIComponentProp(
         label: 'Style',
         type: 'string|null',
-        description: 'Defines the animation style.',
+        description: 'Specifies the animation style to display.',
         default: null,
         acceptedValues: [null, 'spinner', 'dots', 'ring', 'ball', 'bars', 'infinity']
     )]
@@ -74,7 +73,7 @@ class Loading
     #[UIComponentProp(
         label: 'Size',
         type: 'string|null',
-        description: 'Controls the size of the animation.',
+        description: 'Controls the size of the items.',
         default: null,
         acceptedValues: [null, 'xs', 'sm', 'md', 'lg', 'xl']
     )]
