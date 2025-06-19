@@ -1,5 +1,7 @@
+{% apply spaceless %}
 <{{ element }} class="{{ this.getClasses() }}" {{- attributes -}}>
     {%- if block('content') is defined -%}
         {{ block('content') }}
     {%- endif -%}
 </{{ element }}>
+{% endapply %}
