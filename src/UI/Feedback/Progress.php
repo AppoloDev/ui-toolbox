@@ -16,52 +16,52 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 )]
 #[UIComponentExample(
     title: 'Progress',
-    description: 'Displays a simple alert containing an icon and a message.',
+    description: 'Displays a basic progress bar.',
     templateName: '@UIToolboxDoc/examples/feedback/progress/progress.html.twig',
 )]
 #[UIComponentExample(
     title: 'Primary color',
-    description: 'Shows alerts in multiple color schemes to indicate different statuses.',
+    description: "Displays a progress bar with the 'primary' color.",
     templateName: '@UIToolboxDoc/examples/feedback/progress/primary.html.twig',
 )]
 #[UIComponentExample(
     title: 'Secondary color',
-    description: 'Provides a soft background style for alerts in various colors.',
+    description: "Displays a progress bar with the 'secondary' color.",
     templateName: '@UIToolboxDoc/examples/feedback/progress/secondary.html.twig',
 )]
 #[UIComponentExample(
     title: 'Accent color',
-    description: 'Uses an outlined border appearance for alerts across colors.',
+    description: "Displays a progress bar with the 'accent' color.",
     templateName: '@UIToolboxDoc/examples/feedback/progress/accent.html.twig',
 )]
 #[UIComponentExample(
     title: 'Neutral color',
-    description: 'Displays alerts with a dashed border style for visual emphasis.',
+    description: "Displays a progress bar with the 'neutral' color.",
     templateName: '@UIToolboxDoc/examples/feedback/progress/neutral.html.twig',
 )]
 #[UIComponentExample(
     title: 'Info color',
-    description: 'Includes interactive buttons and adapts the layout responsively.',
+    description: "Displays a progress bar with the 'info' color.",
     templateName: '@UIToolboxDoc/examples/feedback/progress/info.html.twig',
 )]
 #[UIComponentExample(
     title: 'Success color',
-    description: 'Displays an alert featuring a heading and supporting description text.',
+    description: "Displays a progress bar with the 'success' color.",
     templateName: '@UIToolboxDoc/examples/feedback/progress/success.html.twig',
 )]
 #[UIComponentExample(
     title: 'Warning color',
-    description: 'Displays an alert featuring a heading and supporting description text.',
+    description: "Displays a progress bar with the 'warning' color.",
     templateName: '@UIToolboxDoc/examples/feedback/progress/warning.html.twig',
 )]
 #[UIComponentExample(
     title: 'Error color',
-    description: 'Displays an alert featuring a heading and supporting description text.',
+    description: "Displays a progress bar with the 'error' color.",
     templateName: '@UIToolboxDoc/examples/feedback/progress/error.html.twig',
 )]
 #[UIComponentExample(
     title: 'Indeterminate (without value)',
-    description: 'Displays an alert featuring a heading and supporting description text.',
+    description: "Displays an indeterminate progress bar without a defined value.",
     templateName: '@UIToolboxDoc/examples/feedback/progress/indeterminate.html.twig',
 )]
 class Progress

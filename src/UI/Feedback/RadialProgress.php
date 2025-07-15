@@ -16,27 +16,27 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 )]
 #[UIComponentExample(
     title: 'Radial progress',
-    description: 'Displays a simple alert containing an icon and a message.',
+    description: 'Displays a radial progress component with default configuration.',
     templateName: '@UIToolboxDoc/examples/feedback/radial_progress/radial_progress.html.twig',
 )]
 #[UIComponentExample(
     title: 'Different values',
-    description: 'Shows alerts in multiple color schemes to indicate different statuses.',
+    description: 'Displays multiple radial progress components with different values.',
     templateName: '@UIToolboxDoc/examples/feedback/radial_progress/different_values.html.twig',
 )]
 #[UIComponentExample(
     title: 'Custom color',
-    description: 'Provides a soft background style for alerts in various colors.',
+    description: 'Displays a radial progress component with a custom color.',
     templateName: '@UIToolboxDoc/examples/feedback/radial_progress/custom_color.html.twig',
 )]
 #[UIComponentExample(
     title: 'With background color and border',
-    description: 'Uses an outlined border appearance for alerts across colors.',
+    description: 'Displays a radial progress component with background and border.',
     templateName: '@UIToolboxDoc/examples/feedback/radial_progress/with_background.html.twig',
 )]
 #[UIComponentExample(
     title: 'Custom size and custom thickness',
-    description: 'Displays alerts with a dashed border style for visual emphasis.',
+    description: 'Displays a radial progress component with custom size and thickness.',
     templateName: '@UIToolboxDoc/examples/feedback/radial_progress/custom_size.html.twig',
 )]
 class RadialProgress
