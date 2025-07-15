@@ -140,6 +140,7 @@
 .progress-success
 .progress-warning
 .progress-error
+.radial-progress
 
 /* Status class */
 .status
