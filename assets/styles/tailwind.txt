@@ -130,9 +130,14 @@
 .menu-vertical
 .menu-horizontal
 
-/* Mockup browser */
+/* Mockup */
 .mockup-browser
 .mockup-browser-toolbar
+.mockup-code
+.mockup-phone
+.mockup-phone-camera
+.mockup-phone-display
+.mockup-window
 
 /* Progress class */
 .progress
