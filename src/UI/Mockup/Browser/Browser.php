@@ -8,7 +8,7 @@ use AppoloDev\UIToolboxBundle\Attribute\UIComponentProp;
 use AppoloDev\UIToolboxBundle\Resolver\ComponentOptionsResolverTrait;
 use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 
-#[AsTwigComponent('browser', template: '@UIToolbox/ui/mockup/browser/browser.html.twig')]
+#[AsTwigComponent('mockupBrowser', template: '@UIToolbox/ui/mockup/browser/browser.html.twig')]
 #[UIComponentDoc(
     title: 'Browser',
     description: 'A customizable mockup browser component based on DaisyUI.',

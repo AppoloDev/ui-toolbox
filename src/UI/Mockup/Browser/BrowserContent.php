@@ -6,7 +6,7 @@ use AppoloDev\UIToolboxBundle\Attribute\UIComponentProp;
 use AppoloDev\UIToolboxBundle\Resolver\ComponentOptionsResolverTrait;
 use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 
-#[AsTwigComponent('browserContent', template: '@UIToolbox/ui/mockup/browser/browser_content.html.twig')]
+#[AsTwigComponent('mockupBrowserContent', template: '@UIToolbox/ui/mockup/browser/browser_content.html.twig')]
 class BrowserContent
 {
     use ComponentOptionsResolverTrait;
