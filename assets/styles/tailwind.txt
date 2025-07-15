@@ -130,6 +130,10 @@
 .menu-vertical
 .menu-horizontal
 
+/* Mockup browser */
+.mockup-browser
+.mockup-browser-toolbar
+
 /* Progress class */
 .progress
 .progress-neutral
