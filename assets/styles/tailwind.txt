@@ -130,6 +130,17 @@
 .menu-vertical
 .menu-horizontal
 
+/* Progress class */
+.progress
+.progress-neutral
+.progress-primary
+.progress-secondary
+.progress-accent
+.progress-info
+.progress-success
+.progress-warning
+.progress-error
+
 /* Status class */
 .status
 .status-neutral
